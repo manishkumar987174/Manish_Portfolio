@@ -242,12 +242,12 @@ export const Contact = () => {
 
 export const Footer = () => {
   return (
-    <footer className="py-12 bg-white dark:bg-zinc-950 border-t border-zinc-100 dark:border-zinc-900">
+    <footer className="py-12 bg-white dark:bg-zinc-950 border-t border-zinc-100 dark:border-zinc-900 flex items-center justify-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
         <p className="text-zinc-500 dark:text-zinc-400 text-sm">
           © {new Date().getFullYear()} {PERSONAL_INFO.name}. All rights reserved.
         </p>
-        <div className="flex gap-6">
+        <div className="flex gap-6 ">
           {PERSONAL_INFO.socials.map((social) => (
             <a
               key={social.name}
