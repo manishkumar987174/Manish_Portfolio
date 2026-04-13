@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
+@config "../tailwind.config.js";
+
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
@@ -47,4 +49,61 @@
   .border-grid {
     @apply border-zinc-200 dark:border-zinc-800;
   }
+}
+
+
+
+/* Layout */
+.section {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Text styles */
+.tag {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.title {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.desc {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.stat-number {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #777;
+}
+
+.link {
+  color: #4f46e5;
+  text-decoration: none;
 }
