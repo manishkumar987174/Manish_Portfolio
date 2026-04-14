@@ -124,10 +124,12 @@ export const EDUCATION = [
     degree: "Class XII – Science (BSEB)",
     institution: "M.V.G. High School",
     location: "Bihar",
+    grade: "Completed"
   },
   {
     degree: "Class X – (BSEB)",
     institution: "M.V.G. High School",
     location: "Bihar",
+    grade: "Completed"
   }
 ];
