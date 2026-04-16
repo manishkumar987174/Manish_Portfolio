@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
   email: "manishdeveloper28@gmail.com",
   phone: "+91 6203056166",
   location: "New Delhi, India",
-  summary: "Results-driven MERN Stack Developer with hands-on experience in building scalable full-stack applications using React.js, Node.js, and MongoDB/MySQL. Skilled in REST API development, JWT authentication, and role-based access control (RBAC). Experienced in workflow automation using n8n and developing AI-based solutions like chatbots.",
+  summary: "MERN Stack Developer with hands-on experience in building scalable web applications using React.js, Node.js, and MongoDB/MySQL. Skilled in REST API development, JWT authentication, RBAC, and workflow automation using n8n, with additional experience in AI-based chatbot development.",
   socials: [
     { name: 'GitHub', icon: Github, url: 'https://github.com' },
     { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com' },
@@ -15,7 +15,7 @@ export const PERSONAL_INFO = {
   ],
   whatsapp: {
     number: "916203056166",
-    message: "Dear Candidate, I recently reviewed your profile and found your experience and projects highly relevant to an opportunity we have. I would appreciate the chance to connect and explore this further. Kindly let me know your availability."
+    message: "Dear Manish.. "
   }
 };
 
