@@ -15,7 +15,7 @@ export const PERSONAL_INFO = {
   ],
   whatsapp: {
     number: "916203056166",
-    message: "Dear Manish.. "
+    message: "Dear Manish! "
   }
 };
 
