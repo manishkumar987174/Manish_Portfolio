@@ -5,8 +5,13 @@ export const PERSONAL_INFO = {
   title: "MERN Stack Developer | Full-Stack Engineer",
   email: "manishkumar987174@gmail.com",
   phone: "+91 6203056166",
+<<<<<<< HEAD
   location: "Noida",
   summary: "Full Stack Developer skilled in developing modern and scalable web applications using React.js, Node.js, Express.js, and MongoDB/MySQL. Strong understanding of backend architecture, RESTful APIs, authentication systems, and database management. Experienced in building automation workflows with n8n and integrating AI-driven features such as chatbots and smart assistants. Focused on writing clean, efficient code and creating seamless user experiences.",
+=======
+  location: "New Delhi, India",
+  summary: "MERN Stack Developer with hands-on experience in building scalable web applications using React.js, Node.js, and MongoDB/MySQL. Skilled in REST API development, JWT authentication, RBAC, and workflow automation using n8n, with additional experience in AI-based chatbot development.",
+>>>>>>> bf6f929c5065c17480583726712e5028fd94bb08
   socials: [
     { name: 'GitHub', icon: Github, url: 'https://github.com' },
     { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com' },
@@ -15,7 +20,7 @@ export const PERSONAL_INFO = {
   ],
   whatsapp: {
     number: "916203056166",
-    message: "Dear Candidate, I recently reviewed your profile and found your experience and projects highly relevant to an opportunity we have. I would appreciate the chance to connect and explore this further. Kindly let me know your availability."
+    message: "Dear Manish! "
   }
 };
 
