@@ -52,10 +52,12 @@
 }
 
 
-
-/* Layout */
 .section {
-  padding: 80px 20px;
+  padding: 80px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
 .container {
@@ -92,6 +94,7 @@
   color: #aaa;
   margin-bottom: 20px;
 }
+
 
 .stat-number {
   font-size: 28px;

@@ -7,12 +7,16 @@ import { PERSONAL_INFO } from './constants';
 
 const About = () => (
   <section id="about" className="section">
-    <div className="container about-grid">
+    <div className="container about-grid ">
       <div className="about-img">
-        <img src="/About_img.png" alt="Workspace" />
+        <img
+          src="/About_img.png"
+          alt="Workspace"
+          style={{ width: "300px", height: "auto" }}
+        />
       </div>
 
-      <div>
+      <div className="pr-3">
         <span className="tag">About Me</span>
         <h2 className="title">
           Passionate Developer <br /> Crafting Digital Experiences

@@ -3,10 +3,10 @@ import { Github, Linkedin, Mail, Phone, Code2, Database, Layout, Terminal, Cpu, 
 export const PERSONAL_INFO = {
   name: "Manish Kumar",
   title: "MERN Stack Developer | Full-Stack Engineer",
-  email: "manishdeveloper28@gmail.com",
+  email: "manishkumar987174@gmail.com",
   phone: "+91 6203056166",
-  location: "New Delhi, India",
-  summary: "Results-driven MERN Stack Developer with hands-on experience in building scalable full-stack applications using React.js, Node.js, and MongoDB/MySQL. Skilled in REST API development, JWT authentication, and role-based access control (RBAC). Experienced in workflow automation using n8n and developing AI-based solutions like chatbots.",
+  location: "Noida",
+  summary: "Full Stack Developer skilled in developing modern and scalable web applications using React.js, Node.js, Express.js, and MongoDB/MySQL. Strong understanding of backend architecture, RESTful APIs, authentication systems, and database management. Experienced in building automation workflows with n8n and integrating AI-driven features such as chatbots and smart assistants. Focused on writing clean, efficient code and creating seamless user experiences.",
   socials: [
     { name: 'GitHub', icon: Github, url: 'https://github.com' },
     { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com' },
@@ -89,10 +89,10 @@ export const PROJECTS = [
     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800"
   },
   {
-    title: "Employee Payroll Ledger",
+    title: "Payroll Ledger",
     description: "Developed custom payroll extension with Employee Master, Setup, and Ledger tables using MS Dynamics 365 BC.",
     tech: ["AL", "Dynamics 365", "RDLC", "ERP"],
-    liveUrl: "https://github.com/manishkumar987174/Employee-Payroll-Ledger",
+    liveUrl: null,
     githubUrl: "https://github.com/manishkumar987174/Employee-Payroll-Ledger",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
   }
