@@ -116,7 +116,7 @@ export const PROJECTS = [
 
 export const EXPERIENCE = [
   {
-    role: "Java Full Stack Developer Intern",
+    role: "Full Stack Developer Intern",
     company: "Croma Campus",
     location: "New Delhi",
     period: "Jul 2025 – Aug 2025",
