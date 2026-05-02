@@ -29,7 +29,7 @@ export const Navbar = () => {
           href="#"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-xl font-bold tracking-tighter dark:text-white"
+          className="text-xl font-bold tracking-tighter"
         >
           MANISH<span className="text-primary">.</span>
         </motion.a>
@@ -43,7 +43,7 @@ export const Navbar = () => {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
-              className="text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-primary dark:hover:text-primary transition-colors"
+              className="text-sm font-medium text-zinc-600 hover:text-primary transition-colors"
             >
               {link.name}
             </motion.a>
@@ -54,7 +54,7 @@ export const Navbar = () => {
         <div className="md:hidden flex items-center space-x-4">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="p-2 text-zinc-600 dark:text-zinc-400"
+            className="p-2 text-zinc-600"
           >
             {isMobileMenuOpen ? <X /> : <Menu />}
           </button>
@@ -68,7 +68,7 @@ export const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass border-t border-zinc-200 dark:border-zinc-800"
+            className="md:hidden glass border-t border-zinc-200"
           >
             <div className="px-4 py-6 space-y-4">
               {navLinks.map((link) => (
@@ -76,7 +76,7 @@ export const Navbar = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block text-lg font-medium text-zinc-600 dark:text-zinc-400 hover:text-primary"
+                  className="block text-lg font-medium text-zinc-600 hover:text-primary"
                 >
                   {link.name}
                 </a>

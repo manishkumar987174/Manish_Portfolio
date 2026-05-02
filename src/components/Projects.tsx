@@ -18,7 +18,7 @@ const SectionTitle = ({ title, subtitle }: { title: string; subtitle: string }) 
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: 0.1 }}
-      className="text-4xl font-bold tracking-tighter dark:text-white mt-2"
+      className="text-4xl font-bold tracking-tighter mt-2"
     >
       {title}
     </motion.h2>
@@ -27,7 +27,7 @@ const SectionTitle = ({ title, subtitle }: { title: string; subtitle: string }) 
 
 export const Skills = () => {
   return (
-    <section id="skills" className="py-24 bg-white dark:bg-zinc-950">
+    <section id="skills" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle title="Technical Expertise" subtitle="My Skills" />
         
@@ -39,20 +39,20 @@ export const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800"
+              className="p-8 rounded-2xl bg-white border border-[#E5E7EB]"
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
                 <category.icon className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold dark:text-white mb-6">{category.category}</h3>
+              <h3 className="text-xl font-bold mb-6">{category.category}</h3>
               <div className="space-y-6">
                 {category.items.map((skill) => (
                   <div key={skill.name}>
                     <div className="flex justify-between text-sm mb-2">
-                      <span className="text-zinc-600 dark:text-zinc-400 font-medium">{skill.name}</span>
+                      <span className="text-zinc-600 font-medium">{skill.name}</span>
                       <span className="text-primary font-mono">{skill.level}%</span>
                     </div>
-                    <div className="h-1.5 w-full bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
+                    <div className="h-1.5 w-full bg-zinc-200 rounded-full overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
@@ -74,11 +74,11 @@ export const Skills = () => {
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-24 bg-zinc-100 dark:bg-zinc-950">
+    <section id="projects" className="py-24 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle title="Featured Projects" subtitle="Portfolio" />
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {PROJECTS.map((project, idx) => (
             <motion.div
               key={project.title}
@@ -87,13 +87,13 @@ export const Projects = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: idx * 0.2 }}
               whileHover={{ y: -10 }}
-              className="group relative overflow-hidden rounded-[2rem] bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-xl"
+              className="group relative overflow-hidden rounded-[2rem] bg-white border border-[#E5E7EB] shadow-sm hover:shadow-xl transition-shadow"
             >
               {/* Preview */}
-              <div className="h-[320px] overflow-hidden relative">
+              <div className="h-[220px] overflow-hidden relative">
                 
-                {/* Payroll Ledger -> Image */}
-                {project.title === "Payroll Ledger" ? (
+                {/* No Live URL -> Image */}
+                {!project.liveUrl ? (
                   <img
                     src={project.image}
                     alt={project.title}
@@ -114,16 +114,18 @@ export const Projects = () => {
                   
                   <div className="flex gap-4 pointer-events-auto">
                     
-                    <motion.a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                      className="p-3 rounded-xl bg-primary text-white shadow-lg"
-                    >
-                      <ExternalLink className="w-5 h-5" />
-                    </motion.a>
+                    {project.liveUrl && (
+                      <motion.a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className="p-3 rounded-xl bg-primary text-white shadow-lg"
+                      >
+                        <ExternalLink className="w-5 h-5" />
+                      </motion.a>
+                    )}
 
                     <motion.a
                       href={project.githubUrl}
@@ -146,30 +148,36 @@ export const Projects = () => {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-[10px] font-bold uppercase tracking-widest bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 rounded-full border border-zinc-200 dark:border-zinc-700"
+                      className="px-3 py-1 text-[10px] font-bold uppercase tracking-widest bg-zinc-100 text-zinc-600 rounded-full border border-zinc-200"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                <h3 className="text-2xl font-black dark:text-white mb-3">
+                <h3 className="text-2xl font-black mb-3">
                   {project.title}
                 </h3>
 
-                <p className="text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed text-sm">
+                <p className="text-zinc-600 mb-6 leading-relaxed text-sm">
                   {project.description}
                 </p>
 
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary font-bold flex items-center gap-2"
-                >
-                  View Project
-                  <ArrowRight className="w-4 h-4" />
-                </a>
+                {project.liveUrl ? (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary font-bold flex items-center gap-2"
+                  >
+                    View Project
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                ) : (
+                  <span className="text-zinc-400 font-bold flex items-center gap-2 cursor-not-allowed">
+                    Not Live
+                  </span>
+                )}
               </div>
             </motion.div>
           ))}

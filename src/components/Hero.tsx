@@ -61,29 +61,10 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-zinc-100 dark:bg-zinc-950">
-      {/* Background Decor */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <motion.div 
-          animate={{ 
-            scale: [1, 1.2, 1],
-            rotate: [0, 90, 0],
-          }}
-          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary/20 rounded-full blur-[120px]" 
-        />
-        <motion.div 
-          animate={{ 
-            scale: [1.2, 1, 1.2],
-            rotate: [0, -90, 0],
-          }}
-          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-cyan-500/10 rounded-full blur-[120px]" 
-        />
-      </div>
+    <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-transparent">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-start">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -99,16 +80,16 @@ export const Hero = () => {
                 Available for Opportunities
               </span>
             </motion.div>
-            <h1 className="text-5xl lg:text-8xl font-black tracking-tighter dark:text-white mb-6 leading-[0.9]">
+            <h1 className="text-5xl lg:text-8xl font-black tracking-tighter mb-6 leading-[0.9]">
               Hi, I'm <br />
               <span className="text-gradient drop-shadow-sm">{PERSONAL_INFO.name}</span>
             </h1>
             <div className="h-12 mb-8">
-              <p className="text-xl lg:text-3xl font-mono text-zinc-600 dark:text-zinc-400 font-medium">
+              <p className="text-xl lg:text-3xl font-mono text-zinc-600 font-medium">
                 {text}<span className="animate-pulse text-primary">_</span>
               </p>
             </div>
-            <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-10 max-w-lg mx-auto md:mx-0 leading-relaxed font-medium">
+            <p className="text-lg text-zinc-600 mb-10 max-w-lg mx-auto md:mx-0 leading-relaxed font-medium">
               {PERSONAL_INFO.summary}
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
@@ -124,7 +105,7 @@ export const Hero = () => {
                 onClick={handleDownloadResume}
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-800 dark:text-white rounded-2xl font-bold flex items-center gap-2 hover:border-primary transition-all group"
+                className="px-8 py-4 bg-white border-2 border-zinc-200 rounded-2xl font-bold flex items-center gap-2 hover:border-primary transition-all group"
               >
                 Download CV <Download className="w-5 h-5 group-hover:animate-bounce" />
               </motion.button>
@@ -137,29 +118,16 @@ export const Hero = () => {
             transition={{ duration: 1, type: "spring", bounce: 0.4 }}
             className="relative flex justify-center items-center order-1 md:order-2"
           >
-            <div className="mb-20 relative w-64 h-80 lg:w-[400px] lg:h-[500px]">
-              {/* Redesigned Profile Frame: Geometric Bento Style */}
-              <motion.div 
-                animate={{ 
-                  borderRadius: ["30% 70% 70% 30% / 30% 30% 70% 70%", "70% 30% 30% 70% / 70% 70% 30% 30%", "30% 70% 70% 30% / 30% 30% 70% 70%"] 
-                }}
-                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute inset-0 bg-gradient-to-br from-primary to-cyan-500 opacity-20 blur-2xl"
-              />
-              
-              <div className=" relative w-full h-full rounded-[3rem] overflow-hidden border-4 border-white dark:border-zinc-900 shadow-[0_32px_64px_-12px_rgba(0,0,0,0.5)] z-10">
+            <div className="relative w-64 h-64 lg:w-[400px] lg:h-[400px] mb-10 md:mb-0">
+              <div className="absolute inset-0 bg-primary/5 rounded-full translate-x-4 translate-y-4"></div>
+              <div className="relative w-full h-full rounded-full overflow-hidden border-8 border-white shadow-xl z-10">
                 <img
                   src="/Pass_photo.jpg"
                   alt={PERSONAL_INFO.name}
-                  className="w-full h-full mt-3 object-cover grayscale hover:grayscale-0 transition-all duration-700   scale-110 hover:scale-100"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                   referrerPolicy="no-referrer"
                 />
-                {/* Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/40 to-transparent" />
               </div>
-
-              {/* Background Accent */}
-              <div className="absolute -inset-4 border-2 border-zinc-200 dark:border-zinc-800 rounded-[3.5rem] -z-10" />
             </div>
           </motion.div>
         </div>

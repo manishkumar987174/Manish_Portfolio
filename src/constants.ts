@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail, Phone, Code2, Database, Layout, Terminal, Cpu, 
 
 export const PERSONAL_INFO = {
   name: "Manish Kumar",
-  title: "MERN Stack Developer | Full-Stack Engineer",
+  title: "Full Stack Developer",
   email: "manishkumar987174@gmail.com",
   phone: "+91 6203056166",
   location: "Noida",
@@ -15,7 +15,7 @@ export const PERSONAL_INFO = {
   ],
   whatsapp: {
     number: "916203056166",
-    message: "Dear Candidate, I recently reviewed your profile and found your experience and projects highly relevant to an opportunity we have. I would appreciate the chance to connect and explore this further. Kindly let me know your availability."
+    message: "Hi Manish, I reviewed your profile and would like to discuss a potential opportunity."
   }
 };
 
@@ -95,6 +95,22 @@ export const PROJECTS = [
     liveUrl: null,
     githubUrl: "https://github.com/manishkumar987174/Employee-Payroll-Ledger",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    title: "Kitchen Cloud",
+    description: "A responsive restaurant platform showcasing menus and culinary services with a modern UI.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://grand-syrniki-fead8e.netlify.app/",
+    githubUrl: "https://github.com/manishkumar987174",
+    image: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    title: "Employee Management System",
+    description: "A comprehensive Employee Management System to efficiently manage staff details and administrative tasks.",
+    tech: ["Java", "Spring Boot", "React", "MySQL"],
+    liveUrl: null,
+    githubUrl: "https://github.com/manishkumar987174/Employee_Management_Systemm",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
   }
 ];
 
