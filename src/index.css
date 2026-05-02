@@ -18,7 +18,7 @@
   }
 
   body {
-    @apply font-sans antialiased transition-colors duration-500 bg-[#F9FAFB] text-[#111827];
+    @apply font-sans antialiased transition-colors duration-500 bg-[#F9FAFB] text-[#111827] dark:bg-zinc-950 dark:text-zinc-100;
   }
 
   h1, h2, h3, h4, h5, h6, .font-heading {
@@ -39,7 +39,7 @@
 
 @layer utilities {
   .glass {
-    @apply bg-white border border-[#E5E7EB] rounded-2xl;
+    @apply bg-white dark:bg-zinc-900/80 border border-[#E5E7EB] dark:border-zinc-800 rounded-2xl;
   }
 
   .text-gradient {
@@ -88,10 +88,11 @@
 .title {
   font-size: 36px;
   margin: 10px 0;
+  @apply text-[#111827] dark:text-white;
 }
 
 .desc {
-  color: #aaa;
+  @apply text-zinc-600 dark:text-zinc-400;
   margin-bottom: 20px;
 }
 
@@ -99,11 +100,12 @@
 .stat-number {
   font-size: 28px;
   font-weight: bold;
+  @apply text-[#111827] dark:text-white;
 }
 
 .stat-label {
   font-size: 12px;
-  color: #777;
+  @apply text-zinc-500 dark:text-zinc-400;
 }
 
 .link {

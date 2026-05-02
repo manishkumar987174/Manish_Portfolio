@@ -18,7 +18,7 @@ const SectionTitle = ({ title, subtitle }: { title: string; subtitle: string }) 
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: 0.1 }}
-      className="text-4xl font-bold tracking-tighter mt-2"
+      className="text-4xl font-bold tracking-tighter dark:text-white mt-2"
     >
       {title}
     </motion.h2>
@@ -27,7 +27,7 @@ const SectionTitle = ({ title, subtitle }: { title: string; subtitle: string }) 
 
 export const Skills = () => {
   return (
-    <section id="skills" className="py-24 bg-white">
+    <section id="skills" className="py-24 bg-white dark:bg-zinc-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle title="Technical Expertise" subtitle="My Skills" />
         
@@ -39,20 +39,20 @@ export const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="p-8 rounded-2xl bg-white border border-[#E5E7EB]"
+              className="p-8 rounded-2xl bg-white dark:bg-zinc-900 border border-[#E5E7EB] dark:border-zinc-800"
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
                 <category.icon className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-6">{category.category}</h3>
+              <h3 className="text-xl font-bold dark:text-white mb-6">{category.category}</h3>
               <div className="space-y-6">
                 {category.items.map((skill) => (
                   <div key={skill.name}>
                     <div className="flex justify-between text-sm mb-2">
-                      <span className="text-zinc-600 font-medium">{skill.name}</span>
+                      <span className="text-zinc-600 dark:text-zinc-400 font-medium">{skill.name}</span>
                       <span className="text-primary font-mono">{skill.level}%</span>
                     </div>
-                    <div className="h-1.5 w-full bg-zinc-200 rounded-full overflow-hidden">
+                    <div className="h-1.5 w-full bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
@@ -74,7 +74,7 @@ export const Skills = () => {
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-24 bg-transparent">
+    <section id="projects" className="py-24 bg-transparent dark:bg-zinc-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle title="Featured Projects" subtitle="Portfolio" />
 
@@ -87,7 +87,7 @@ export const Projects = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: idx * 0.2 }}
               whileHover={{ y: -10 }}
-              className="group relative overflow-hidden rounded-[2rem] bg-white border border-[#E5E7EB] shadow-sm hover:shadow-xl transition-shadow"
+              className="group relative overflow-hidden rounded-[2rem] bg-white dark:bg-zinc-900 border border-[#E5E7EB] dark:border-zinc-800 shadow-sm hover:shadow-xl transition-shadow"
             >
               {/* Preview */}
               <div className="h-[220px] overflow-hidden relative">
@@ -148,18 +148,18 @@ export const Projects = () => {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-[10px] font-bold uppercase tracking-widest bg-zinc-100 text-zinc-600 rounded-full border border-zinc-200"
+                      className="px-3 py-1 text-[10px] font-bold uppercase tracking-widest bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 rounded-full border border-zinc-200 dark:border-zinc-700"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                <h3 className="text-2xl font-black mb-3">
+                <h3 className="text-2xl font-black dark:text-white mb-3">
                   {project.title}
                 </h3>
 
-                <p className="text-zinc-600 mb-6 leading-relaxed text-sm">
+                <p className="text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed text-sm">
                   {project.description}
                 </p>
 

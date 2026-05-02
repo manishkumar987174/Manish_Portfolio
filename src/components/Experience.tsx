@@ -5,7 +5,7 @@ import { EXPERIENCE, EDUCATION, PERSONAL_INFO } from '../constants';
 
 export const ExperienceEducation = () => {
  return (
- <section id="experience" className="py-24 bg-white">
+ <section id="experience" className="py-24 bg-white dark:bg-zinc-950">
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
  <div className="grid lg:grid-cols-2 gap-16">
  {/* Experience */}
@@ -14,9 +14,9 @@ export const ExperienceEducation = () => {
  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
  <Briefcase className="w-6 h-6 text-primary" />
  </div>
- <h2 className="text-3xl font-bold tracking-tighter">Experience</h2>
+ <h2 className="text-3xl font-bold dark:text-white tracking-tighter">Experience</h2>
  </div>
- <div className="space-y-8 border-l-2 border-zinc-100 ml-6 pl-8">
+ <div className="space-y-8 border-l-2 border-zinc-100 dark:border-zinc-800 ml-6 pl-8">
  {EXPERIENCE.map((exp, idx) => (
  <motion.div
  key={idx}
@@ -25,13 +25,13 @@ export const ExperienceEducation = () => {
  viewport={{ once: true }}
  className="relative"
  >
- <div className="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-white" />
+ <div className="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-zinc-950" />
  <span className="text-sm font-bold text-primary uppercase tracking-widest">{exp.period}</span>
- <h3 className="text-xl font-bold mt-2">{exp.role}</h3>
- <p className="text-zinc-500 font-medium mb-4">{exp.company} • {exp.location}</p>
+ <h3 className="text-xl font-bold dark:text-white mt-2">{exp.role}</h3>
+ <p className="text-zinc-500 dark:text-zinc-400 font-medium mb-4">{exp.company} • {exp.location}</p>
  <ul className="space-y-2">
  {exp.description.map((item, i) => (
- <li key={i} className="text-zinc-600 text-sm flex gap-2">
+ <li key={i} className="text-zinc-600 dark:text-zinc-400 text-sm flex gap-2">
  <span className="text-primary">•</span> {item}
  </li>
  ))}
@@ -47,9 +47,9 @@ export const ExperienceEducation = () => {
  <div className="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center">
  <GraduationCap className="w-6 h-6 text-cyan-500" />
  </div>
- <h2 className="text-3xl font-bold tracking-tighter">Education</h2>
+ <h2 className="text-3xl font-bold dark:text-white tracking-tighter">Education</h2>
  </div>
- <div className="space-y-8 border-l-2 border-zinc-100 ml-6 pl-8">
+ <div className="space-y-8 border-l-2 border-zinc-100 dark:border-zinc-800 ml-6 pl-8">
  {EDUCATION.map((edu, idx) => (
  <motion.div
  key={idx}
@@ -58,11 +58,11 @@ export const ExperienceEducation = () => {
  viewport={{ once: true }}
  className="relative"
  >
- <div className="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-cyan-500 border-4 border-white" />
+ <div className="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-cyan-500 border-4 border-white dark:border-zinc-950" />
  <span className="text-sm font-bold text-cyan-500 uppercase tracking-widest">{edu.period}</span>
- <h3 className="text-xl font-bold mt-2">{edu.degree}</h3>
- <p className="text-zinc-500 font-medium">{edu.institution}</p>
- <p className="text-zinc-400 text-sm mt-1">{edu.location} • Grade: {edu.grade}</p>
+ <h3 className="text-xl font-bold dark:text-white mt-2">{edu.degree}</h3>
+ <p className="text-zinc-500 dark:text-zinc-400 font-medium">{edu.institution}</p>
+ <p className="text-zinc-400 dark:text-zinc-500 text-sm mt-1">{edu.location} • Grade: {edu.grade}</p>
  </motion.div>
  ))}
  </div>
@@ -102,46 +102,46 @@ export const Contact = () => {
  };
 
  return (
- <section id="contact" className="py-24 bg-zinc-50">
+ <section id="contact" className="py-24 bg-zinc-50 dark:bg-zinc-950">
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
  <div className="grid lg:grid-cols-2 gap-16">
  <div>
  <span className="text-primary font-bold tracking-widest uppercase text-xs">Get In Touch</span>
- <h2 className="text-4xl font-bold tracking-tighter mt-2 mb-6">Let's Work Together</h2>
- <p className="text-zinc-600 text-lg mb-12 leading-relaxed">
+ <h2 className="text-4xl font-bold dark:text-white tracking-tighter mt-2 mb-6">Let's Work Together</h2>
+ <p className="text-zinc-600 dark:text-zinc-400 text-lg mb-12 leading-relaxed">
  I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
  </p>
  
  <div className="space-y-8">
  <div className="flex items-center gap-6">
- <div className="w-14 h-14 rounded-2xl bg-white border border-zinc-200 flex items-center justify-center shadow-sm">
+ <div className="w-14 h-14 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex items-center justify-center shadow-sm">
  <Mail className="w-6 h-6 text-primary" />
  </div>
  <div>
  <p className="text-sm font-bold text-zinc-400 uppercase tracking-widest">Email Me</p>
- <a href={`mailto:${PERSONAL_INFO.email}`} className="text-lg font-bold hover:text-primary transition-colors">
+ <a href={`mailto:${PERSONAL_INFO.email}`} className="text-lg font-bold dark:text-white hover:text-primary dark:hover:text-primary transition-colors">
  {PERSONAL_INFO.email}
  </a>
  </div>
  </div>
  <div className="flex items-center gap-6">
- <div className="w-14 h-14 rounded-2xl bg-white border border-zinc-200 flex items-center justify-center shadow-sm">
+ <div className="w-14 h-14 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex items-center justify-center shadow-sm">
  <Phone className="w-6 h-6 text-primary" />
  </div>
  <div>
  <p className="text-sm font-bold text-zinc-400 uppercase tracking-widest">Call Me</p>
- <a href={`tel:${PERSONAL_INFO.phone}`} className="text-lg font-bold hover:text-primary transition-colors">
+ <a href={`tel:${PERSONAL_INFO.phone}`} className="text-lg font-bold dark:text-white hover:text-primary dark:hover:text-primary transition-colors">
  {PERSONAL_INFO.phone}
  </a>
  </div>
  </div>
  <div className="flex items-center gap-6">
- <div className="w-14 h-14 rounded-2xl bg-white border border-zinc-200 flex items-center justify-center shadow-sm">
+ <div className="w-14 h-14 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex items-center justify-center shadow-sm">
  <MapPin className="w-6 h-6 text-primary" />
  </div>
  <div>
  <p className="text-sm font-bold text-zinc-400 uppercase tracking-widest">Location</p>
- <p className="text-lg font-bold">{PERSONAL_INFO.location}</p>
+ <p className="text-lg font-bold dark:text-white">{PERSONAL_INFO.location}</p>
  </div>
  </div>
  </div>
@@ -154,7 +154,7 @@ export const Contact = () => {
  className="relative"
  >
  <form
- className="p-10 rounded-3xl bg-white border border-zinc-200 shadow-xl shadow-zinc-200/50"
+ className="p-10 rounded-3xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-xl shadow-zinc-200/50 dark:shadow-none"
  onSubmit={handleSubmit}
  >
  <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -165,7 +165,7 @@ export const Contact = () => {
  required
  value={formData.name}
  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
- className="w-full px-4 py-3 rounded-xl bg-zinc-50 border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
+ className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary dark:text-white transition-all"
  placeholder="Your Name"
  />
  </div>
@@ -176,7 +176,7 @@ export const Contact = () => {
  required
  value={formData.email}
  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
- className="w-full px-4 py-3 rounded-xl bg-zinc-50 border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
+ className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary dark:text-white transition-all"
  placeholder="you@gmail.com"
  />
  </div>
@@ -188,7 +188,7 @@ export const Contact = () => {
  required
  value={formData.message}
  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
- className="w-full px-4 py-3 rounded-xl bg-zinc-50 border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none"
+ className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary dark:text-white transition-all resize-none"
  placeholder="Hello Manish..."
  />
  </div>
@@ -242,7 +242,7 @@ export const Contact = () => {
 
 export const Footer = () => {
  return (
- <footer className="py-12 bg-white border-t border-zinc-100 flex items-center justify-center">
+ <footer className="py-12 bg-white dark:bg-zinc-950 border-t border-zinc-100 dark:border-zinc-900 flex items-center justify-center">
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
  <p className="text-zinc-500 text-sm">
  © {new Date().getFullYear()} {PERSONAL_INFO.name}. All rights reserved.
@@ -272,13 +272,13 @@ export const Loader = () => (
  animate={{ opacity: 0 }}
  transition={{ duration: 0.8, delay: 1.2 }}
  onAnimationComplete={() => document.body.style.overflow = 'auto'}
- className="fixed inset-0 z-[100] bg-[#F9FAFB] flex items-center justify-center pointer-events-none"
+ className="fixed inset-0 z-[100] bg-[#F9FAFB] dark:bg-zinc-950 flex items-center justify-center pointer-events-none"
  >
  <motion.div
  initial={{ opacity: 0, y: 10 }}
  animate={{ opacity: 1, y: 0 }}
  transition={{ duration: 0.5 }}
- className="text-5xl font-black tracking-tighter text-[#111827]"
+ className="text-5xl font-black tracking-tighter text-[#111827] dark:text-white"
  >
  MANISH<span className="text-primary">.</span>
  </motion.div>

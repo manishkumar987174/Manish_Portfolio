@@ -80,16 +80,16 @@ export const Hero = () => {
                 Available for Opportunities
               </span>
             </motion.div>
-            <h1 className="text-5xl lg:text-8xl font-black tracking-tighter mb-6 leading-[0.9]">
+            <h1 className="text-5xl lg:text-8xl font-black tracking-tighter dark:text-white mb-6 leading-[0.9]">
               Hi, I'm <br />
               <span className="text-gradient drop-shadow-sm">{PERSONAL_INFO.name}</span>
             </h1>
             <div className="h-12 mb-8">
-              <p className="text-xl lg:text-3xl font-mono text-zinc-600 font-medium">
+              <p className="text-xl lg:text-3xl font-mono text-zinc-600 dark:text-zinc-400 font-medium">
                 {text}<span className="animate-pulse text-primary">_</span>
               </p>
             </div>
-            <p className="text-lg text-zinc-600 mb-10 max-w-lg mx-auto md:mx-0 leading-relaxed font-medium">
+            <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-10 max-w-lg mx-auto md:mx-0 leading-relaxed font-medium">
               {PERSONAL_INFO.summary}
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
@@ -105,7 +105,7 @@ export const Hero = () => {
                 onClick={handleDownloadResume}
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-white border-2 border-zinc-200 rounded-2xl font-bold flex items-center gap-2 hover:border-primary transition-all group"
+                className="px-8 py-4 bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-800 dark:text-white rounded-2xl font-bold flex items-center gap-2 hover:border-primary transition-all group"
               >
                 Download CV <Download className="w-5 h-5 group-hover:animate-bounce" />
               </motion.button>
@@ -120,7 +120,7 @@ export const Hero = () => {
           >
             <div className="relative w-64 h-64 lg:w-[400px] lg:h-[400px] mb-10 md:mb-0">
               <div className="absolute inset-0 bg-primary/5 rounded-full translate-x-4 translate-y-4"></div>
-              <div className="relative w-full h-full rounded-full overflow-hidden border-8 border-white shadow-xl z-10">
+              <div className="relative w-full h-full rounded-full overflow-hidden border-8 border-white dark:border-zinc-900 shadow-xl z-10">
                 <img
                   src="/Pass_photo.jpg"
                   alt={PERSONAL_INFO.name}
