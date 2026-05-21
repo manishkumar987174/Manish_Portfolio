@@ -89,6 +89,14 @@ export const PROJECTS = [
     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800"
   },
   {
+    title: "Job-Portal",
+    description: "JobPortal is a recruitment platform where students upload resumes and apply for jobs, while recruiters post jobs, review applications, and accept or reject candidates.",
+    tech: ["React", "Node.js", "MongoDB", "Express.js", "Tailwind"],
+    liveUrl: null,
+    githubUrl: "https://github.com/manishkumar987174/Job-Portal",
+    image: "https://unsplash.com/photos/the-word-jobs-in-colorful-block-letters-Dy2Q0kR07dA"
+  },
+  {
     title: "Payroll Ledger",
     description: "Developed custom payroll extension with Employee Master, Setup, and Ledger tables using MS Dynamics 365 BC.",
     tech: ["AL", "Dynamics 365", "RDLC", "ERP"],
