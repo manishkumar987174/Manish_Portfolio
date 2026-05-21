@@ -94,7 +94,7 @@ export const PROJECTS = [
     tech: ["React", "Node.js", "MongoDB", "Express.js", "Tailwind"],
     liveUrl: null,
     githubUrl: "https://github.com/manishkumar987174/Job-Portal",
-    image: "https://unsplash.com/photos/the-word-jobs-in-colorful-block-letters-Dy2Q0kR07dA"
+    image: "https://images.unsplash.com/photo-1768839724944-6f7101c5a4da?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     title: "Payroll Ledger",
