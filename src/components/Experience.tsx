@@ -245,7 +245,7 @@ export const Footer = () => {
  <footer className="py-12 bg-white dark:bg-zinc-950 border-t border-zinc-100 dark:border-zinc-900 flex items-center justify-center">
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
  <p className="text-zinc-500 text-sm">
- © {new Date().getFullYear()} {PERSONAL_INFO.name}. All rights reserved.
+ © {new Date().getFullYear()} Made with ❤️ by {PERSONAL_INFO.name}. 
  </p>
  <div className="flex gap-6">
  {PERSONAL_INFO.socials.map((social) => (
