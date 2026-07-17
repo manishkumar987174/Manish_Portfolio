@@ -270,17 +270,8 @@ function triggerEntryAnimations() {
       });
     }
   });
-
-  inView('.animate-skills-bars', (info) => {
-    const bars = info.target.querySelectorAll('.skill-fill');
-    bars.forEach(bar => {
-      const percentage = bar.getAttribute('data-level');
-      if (percentage) {
-        animate(bar, { width: [0, percentage] }, { duration: 1.2, easing: 'ease-out' });
-      }
-    });
-  });
 }
+
 
 // --- Music Player (Lady Gaga & Bruno Mars - Die With A Smile) ---
 const audio = document.getElementById('portfolio-audio');

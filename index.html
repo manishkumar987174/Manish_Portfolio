@@ -179,11 +179,11 @@
           <div class="grid md:grid-cols-12 gap-12 lg:gap-20 items-start animate-view-fade">
             <!-- Left Side: Editorial Image & Badge -->
             <div class="md:col-span-5 relative flex justify-center">
-              <div class="relative w-full max-w-[380px] rounded-3xl overflow-hidden border-2 border-bronze shadow-2xl p-3 bg-cream dark:bg-charcoal">
+              <div class="relative w-full max-w-[380px] rounded-2xl overflow-hidden border-2 border-bronze shadow-xl p-3 bg-cream dark:bg-charcoal">
                 <!-- Passerpartout border styling -->
-                <div class="rounded-2xl overflow-hidden border border-bronze/20 aspect-[4/5]">
+                <div class="rounded-xl overflow-hidden border border-bronze/20 aspect-[4/5]">
                   <img
-                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800"
+                    src="assets/about.jpg"
                     alt="Workspace"
                     class="w-full h-full object-cover transition-all duration-[750ms]"
                   />
@@ -273,194 +273,107 @@
           </div>
 
           <!-- Skills Categories Grid -->
-          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 animate-skills-bars">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Category 1: Languages -->
-            <div class="p-8 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic shadow-sm animate-view-fade">
-              <div class="w-12 h-12 rounded-xl bg-bronze/10 flex items-center justify-center mb-6 text-bronze">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
-              </div>
-              <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-6">Languages</h3>
-              <div class="space-y-6">
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>JavaScript (ES6+)</span>
-                  </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="90%" style="width: 0%"></div>
-                  </div>
+            <div class="p-6 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic shadow-sm animate-view-fade flex flex-col justify-between">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-bronze/10 flex items-center justify-center mb-5 text-bronze mx-auto">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
                 </div>
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>Java</span>
+                <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-4 text-center">Languages</h3>
+                <div class="divide-y divide-bronze/10 dark:divide-bronze/5">
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">JavaScript (ES6+)</span>
                   </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="85%" style="width: 0%"></div>
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Java</span>
                   </div>
-                </div>
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>Python</span>
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Python</span>
                   </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="70%" style="width: 0%"></div>
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">C</span>
                   </div>
-                </div>
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>C</span>
-                  </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="75%" style="width: 0%"></div>
-                  </div>
-                </div>
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>AL</span>
-                  </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="65%" style="width: 0%"></div>
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">AL</span>
                   </div>
                 </div>
               </div>
             </div>
 
             <!-- Category 2: Frontend -->
-            <div class="p-8 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic shadow-sm animate-view-fade">
-              <div class="w-12 h-12 rounded-xl bg-bronze/10 flex items-center justify-center mb-6 text-bronze">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h17.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125H3.375a1.125 1.125 0 01-1.125-1.125V7.125zM10.5 11.25H3.75v5.625c0 .207.168.375.375.375h6.375V11.25zm1.5 0v6h7.875a.375.375 0 00.375-.375V11.25H12z"/></svg>
-              </div>
-              <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-6">Frontend</h3>
-              <div class="space-y-6">
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>React.js</span>
-                  </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="90%" style="width: 0%"></div>
-                  </div>
+            <div class="p-6 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic shadow-sm animate-view-fade flex flex-col justify-between">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-bronze/10 flex items-center justify-center mb-5 text-bronze mx-auto">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h17.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125H3.375a1.125 1.125 0 01-1.125-1.125V7.125zM10.5 11.25H3.75v5.625c0 .207.168.375.375.375h6.375V11.25zm1.5 0v6h7.875a.375.375 0 00.375-.375V11.25H12z"/></svg>
                 </div>
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>Tailwind CSS</span>
+                <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-4 text-center">Frontend</h3>
+                <div class="divide-y divide-bronze/10 dark:divide-bronze/5">
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">React.js</span>
                   </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="95%" style="width: 0%"></div>
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Tailwind CSS</span>
                   </div>
-                </div>
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>HTML5 / CSS3</span>
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">HTML5 / CSS3</span>
                   </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="95%" style="width: 0%"></div>
-                  </div>
-                </div>
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>Bootstrap</span>
-                  </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="80%" style="width: 0%"></div>
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Bootstrap</span>
                   </div>
                 </div>
               </div>
             </div>
 
             <!-- Category 3: Backend -->
-            <div class="p-8 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic shadow-sm animate-view-fade">
-              <div class="w-12 h-12 rounded-xl bg-bronze/10 flex items-center justify-center mb-6 text-bronze">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.128 16.556 18 12 18s-8.25-1.872-8.25-4.125v-3.75"/></svg>
-              </div>
-              <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-6">Backend</h3>
-              <div class="space-y-6">
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>Node.js</span>
-                  </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="85%" style="width: 0%"></div>
-                  </div>
+            <div class="p-6 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic shadow-sm animate-view-fade flex flex-col justify-between">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-bronze/10 flex items-center justify-center mb-5 text-bronze mx-auto">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.128 16.556 18 12 18s-8.25-1.872-8.25-4.125v-3.75"/></svg>
                 </div>
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>Express.js</span>
+                <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-4 text-center">Backend</h3>
+                <div class="divide-y divide-bronze/10 dark:divide-bronze/5">
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Node.js</span>
                   </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="88%" style="width: 0%"></div>
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Express.js</span>
                   </div>
-                </div>
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>REST APIs</span>
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">REST APIs</span>
                   </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="92%" style="width: 0%"></div>
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">JWT Auth</span>
                   </div>
-                </div>
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>JWT Auth</span>
-                  </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="85%" style="width: 0%"></div>
-                  </div>
-                </div>
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>Python</span>
-                  </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="75%" style="width: 0%"></div>
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Python</span>
                   </div>
                 </div>
               </div>
             </div>
 
             <!-- Category 4: Tools & Others -->
-            <div class="p-8 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic shadow-sm animate-view-fade">
-              <div class="w-12 h-12 rounded-xl bg-bronze/10 flex items-center justify-center mb-6 text-bronze">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M12 3v1.5m3.75-1.5v1.5M8.25 19.5V21M12 19.5V21m3.75-1.5V21m-12-11.25h1.5m16.5 0h1.5m-19.5 3h1.5m16.5 0h1.5m-3-6a2.25 2.25 0 00-2.25-2.25h-9a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9zM10.5 10.5h3v3h-3v-3z"/></svg>
-              </div>
-              <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-6">Tools &amp; Databases</h3>
-              <div class="space-y-6">
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>n8n Automation</span>
-                  </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="80%" style="width: 0%"></div>
-                  </div>
+            <div class="p-6 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic shadow-sm animate-view-fade flex flex-col justify-between">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-bronze/10 flex items-center justify-center mb-5 text-bronze mx-auto">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M12 3v1.5m3.75-1.5v1.5M8.25 19.5V21M12 19.5V21m3.75-1.5V21m-12-11.25h1.5m16.5 0h1.5m-19.5 3h1.5m16.5 0h1.5m-3-6a2.25 2.25 0 00-2.25-2.25h-9a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9zM10.5 10.5h3v3h-3v-3z"/></svg>
                 </div>
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>Git / GitHub</span>
+                <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-4 text-center">Tools & Databases</h3>
+                <div class="divide-y divide-bronze/10 dark:divide-bronze/5">
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">n8n Automation</span>
                   </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="85%" style="width: 0%"></div>
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Git / GitHub</span>
                   </div>
-                </div>
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>MongoDB / MySQL</span>
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">MongoDB / MySQL</span>
                   </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="82%" style="width: 0%"></div>
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Postman</span>
                   </div>
-                </div>
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>Postman</span>
-                  </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="90%" style="width: 0%"></div>
-                  </div>
-                </div>
-                <div>
-                  <div class="flex justify-between text-xs font-bold tracking-wide uppercase text-charcoal/60 dark:text-cream/60 mb-2">
-                    <span>Web Scraping</span>
-                  </div>
-                  <div class="h-1 w-full bg-bronze/10 dark:bg-bronze/5 rounded-full overflow-hidden">
-                    <div class="skill-fill h-full bg-bronze rounded-full" data-level="85%" style="width: 0%"></div>
+                  <div class="py-2.5 text-center">
+                    <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Web Scraping</span>
                   </div>
                 </div>
               </div>
@@ -480,258 +393,228 @@
           </div>
 
           <!-- Projects Grid -->
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Project Card 1 -->
-            <div class="group rounded-3xl bg-cream dark:bg-charcoal border border-classic overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between animate-view-fade">
+            <div class="group rounded-2xl bg-cream dark:bg-charcoal border border-classic overflow-hidden shadow-sm hover:border-bronze/40 transition-all duration-300 flex flex-col justify-between animate-view-fade">
               <div>
-                <div class="relative h-56 overflow-hidden">
+                <div class="relative h-40 overflow-hidden border-b border-classic">
                   <img
-                    src="https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80&w=800"
+                    src="assets/project-interviewiq.jpg"
                     alt="InterviewIQ.AI"
-                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-103"
                   />
-                  <div class="absolute inset-0 bg-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                    <a href="https://ai-interview-agent-1-6819.onrender.com/" target="_blank" class="p-3 bg-bronze text-cream dark:text-charcoal rounded-xl shadow-lg hover:scale-110 transition-transform">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
-                    </a>
-                    <a href="https://github.com/manishkumar987174/AI_INTERVIEW_AGENT" target="_blank" class="p-3 bg-cream text-charcoal rounded-xl shadow-lg hover:scale-110 transition-transform">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-                    </a>
-                  </div>
                 </div>
-                <div class="p-6">
-                  <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">React</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">Node.js</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">MongoDB</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">AI</span>
+                <div class="p-5">
+                  <div class="flex flex-wrap gap-1.5 mb-3">
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">React</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">Node.js</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">MongoDB</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">AI</span>
                   </div>
-                  <h3 class="text-xl font-serif font-bold mb-3">InterviewIQ.AI</h3>
-                  <p class="text-xs text-charcoal/70 dark:text-cream/70 leading-relaxed mb-4">
-                    An AI tool that simulates mock interviews and analyzes resumes to help people prepare for job interviews.
+                  <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-2">InterviewIQ.AI</h3>
+                  <p class="text-xs text-charcoal/70 dark:text-cream/70 leading-relaxed mb-1">
+                    An AI tool that simulates mock interviews and analyzes resumes to help prepare for job interviews.
                   </p>
                 </div>
               </div>
-              <div class="px-6 pb-6 pt-0">
-                <a href="https://ai-interview-agent-1-6819.onrender.com/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-bronze hover:text-bronze-dark transition-colors">
-                  View Project <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+              <div class="px-5 pb-5 pt-0 flex justify-between items-center">
+                <a href="https://ai-interview-agent-1-6819.onrender.com/" target="_blank" class="inline-flex items-center gap-1 text-xs font-bold text-bronze hover:text-bronze-dark transition-colors group/link">
+                  Live Demo <svg class="w-3 h-3 transition-transform group-hover/link:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                </a>
+                <a href="https://github.com/manishkumar987174/AI_INTERVIEW_AGENT" target="_blank" class="text-charcoal/60 dark:text-cream/60 hover:text-bronze dark:hover:text-bronze transition-colors" aria-label="GitHub Repository">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Project Card 2 -->
-            <div class="group rounded-3xl bg-cream dark:bg-charcoal border border-classic overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between animate-view-fade">
+            <div class="group rounded-2xl bg-cream dark:bg-charcoal border border-classic overflow-hidden shadow-sm hover:border-bronze/40 transition-all duration-300 flex flex-col justify-between animate-view-fade">
               <div>
-                <div class="relative h-56 overflow-hidden">
+                <div class="relative h-40 overflow-hidden border-b border-classic">
                   <img
-                    src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&q=80&w=800"
+                    src="assets/project-lms.jpg"
                     alt="Library Management System"
-                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-103"
                   />
-                  <div class="absolute inset-0 bg-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                    <a href="https://lms-manish.netlify.app/" target="_blank" class="p-3 bg-bronze text-cream dark:text-charcoal rounded-xl shadow-lg hover:scale-110 transition-transform">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
-                    </a>
-                    <a href="https://github.com/manishkumar987174/LMS" target="_blank" class="p-3 bg-cream text-charcoal rounded-xl shadow-lg hover:scale-110 transition-transform">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-                    </a>
-                  </div>
                 </div>
-                <div class="p-6">
-                  <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">MERN Stack</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">JWT</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">RBAC</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">Axios</span>
+                <div class="p-5">
+                  <div class="flex flex-wrap gap-1.5 mb-3">
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">MERN Stack</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">JWT</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">RBAC</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">Axios</span>
                   </div>
-                  <h3 class="text-xl font-serif font-bold mb-3">Library Management System</h3>
-                  <p class="text-xs text-charcoal/70 dark:text-cream/70 leading-relaxed mb-4">
+                  <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-2">Library Management System</h3>
+                  <p class="text-xs text-charcoal/70 dark:text-cream/70 leading-relaxed mb-1">
                     A website for schools or libraries to manage books, track student accounts, and calculate late return fees.
                   </p>
                 </div>
               </div>
-              <div class="px-6 pb-6 pt-0">
-                <a href="https://lms-manish.netlify.app/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-bronze hover:text-bronze-dark transition-colors">
-                  View Project <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+              <div class="px-5 pb-5 pt-0 flex justify-between items-center">
+                <a href="https://lms-manish.netlify.app/" target="_blank" class="inline-flex items-center gap-1 text-xs font-bold text-bronze hover:text-bronze-dark transition-colors group/link">
+                  Live Demo <svg class="w-3 h-3 transition-transform group-hover/link:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                </a>
+                <a href="https://github.com/manishkumar987174/LMS" target="_blank" class="text-charcoal/60 dark:text-cream/60 hover:text-bronze dark:hover:text-bronze transition-colors" aria-label="GitHub Repository">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Project Card 3 -->
-            <div class="group rounded-3xl bg-cream dark:bg-charcoal border border-classic overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between animate-view-fade">
+            <div class="group rounded-2xl bg-cream dark:bg-charcoal border border-classic overflow-hidden shadow-sm hover:border-bronze/40 transition-all duration-300 flex flex-col justify-between animate-view-fade">
               <div>
-                <div class="relative h-56 overflow-hidden">
+                <div class="relative h-40 overflow-hidden border-b border-classic">
                   <img
-                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800"
+                    src="assets/project-stylehive.jpg"
                     alt="StyleHive"
-                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-103"
                   />
-                  <div class="absolute inset-0 bg-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                    <a href="https://stylehive.vercel.app/index.html" target="_blank" class="p-3 bg-bronze text-cream dark:text-charcoal rounded-xl shadow-lg hover:scale-110 transition-transform">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
-                    </a>
-                    <a href="https://github.com/manishkumar987174/StyleHive" target="_blank" class="p-3 bg-cream text-charcoal rounded-xl shadow-lg hover:scale-110 transition-transform">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-                    </a>
-                  </div>
                 </div>
-                <div class="p-6">
-                  <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">HTML</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">CSS</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">JS</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">WebStorage</span>
+                <div class="p-5">
+                  <div class="flex flex-wrap gap-1.5 mb-3">
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">HTML</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">CSS</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">JS</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">WebStorage</span>
                   </div>
-                  <h3 class="text-xl font-serif font-bold mb-3">StyleHive</h3>
-                  <p class="text-xs text-charcoal/70 dark:text-cream/70 leading-relaxed mb-4">
+                  <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-2">StyleHive</h3>
+                  <p class="text-xs text-charcoal/70 dark:text-cream/70 leading-relaxed mb-1">
                     A modern online store with a shopping cart, product categories, and responsive design for easy shopping on any device.
                   </p>
                 </div>
               </div>
-              <div class="px-6 pb-6 pt-0">
-                <a href="https://stylehive.vercel.app/index.html" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-bronze hover:text-bronze-dark transition-colors">
-                  View Project <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+              <div class="px-5 pb-5 pt-0 flex justify-between items-center">
+                <a href="https://stylehive.vercel.app/index.html" target="_blank" class="inline-flex items-center gap-1 text-xs font-bold text-bronze hover:text-bronze-dark transition-colors group/link">
+                  Live Demo <svg class="w-3 h-3 transition-transform group-hover/link:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                </a>
+                <a href="https://github.com/manishkumar987174/StyleHive" target="_blank" class="text-charcoal/60 dark:text-cream/60 hover:text-bronze dark:hover:text-bronze transition-colors" aria-label="GitHub Repository">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Project Card 4 -->
-            <div class="group rounded-3xl bg-cream dark:bg-charcoal border border-classic overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between animate-view-fade">
+            <div class="group rounded-2xl bg-cream dark:bg-charcoal border border-classic overflow-hidden shadow-sm hover:border-bronze/40 transition-all duration-300 flex flex-col justify-between animate-view-fade">
               <div>
-                <div class="relative h-56 overflow-hidden">
+                <div class="relative h-40 overflow-hidden border-b border-classic">
                   <img
-                    src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
+                    src="assets/project-payroll.jpg"
                     alt="Payroll Ledger"
-                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-103"
                   />
-                  <div class="absolute inset-0 bg-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                    <a href="https://github.com/manishkumar987174/Employee-Payroll-Ledger" target="_blank" class="p-3 bg-cream text-charcoal rounded-xl shadow-lg hover:scale-110 transition-transform">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-                    </a>
-                  </div>
                 </div>
-                <div class="p-6">
-                  <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">AL</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">Dynamics 365</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">RDLC</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">ERP</span>
+                <div class="p-5">
+                  <div class="flex flex-wrap gap-1.5 mb-3">
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">AL</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">Dynamics 365</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">RDLC</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">ERP</span>
                   </div>
-                  <h3 class="text-xl font-serif font-bold mb-3">Payroll Ledger</h3>
-                  <p class="text-xs text-charcoal/70 dark:text-cream/70 leading-relaxed mb-4">
+                  <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-2">Payroll Ledger</h3>
+                  <p class="text-xs text-charcoal/70 dark:text-cream/70 leading-relaxed mb-1">
                     A business system extension to manage employee profiles, salary setups, and payroll ledgers.
                   </p>
                 </div>
               </div>
-              <div class="px-6 pb-6 pt-0 flex items-center justify-between">
-                <span class="text-xs font-bold text-charcoal/40 dark:text-cream/40 flex items-center gap-1">
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/></svg> Not Live
+              <div class="px-5 pb-5 pt-0 flex justify-between items-center">
+                <span class="text-[10px] font-bold text-charcoal/40 dark:text-cream/40 flex items-center gap-1 uppercase tracking-wider">
+                  <span class="w-1.5 h-1.5 rounded-full bg-charcoal/30 dark:bg-cream/30"></span> Offline ERP
                 </span>
-                <a href="https://github.com/manishkumar987174/Employee-Payroll-Ledger" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-bronze hover:text-bronze-dark transition-colors">
-                  GitHub <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                <a href="https://github.com/manishkumar987174/Employee-Payroll-Ledger" target="_blank" class="text-charcoal/60 dark:text-cream/60 hover:text-bronze dark:hover:text-bronze transition-colors" aria-label="GitHub Repository">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Project Card 5 -->
-            <div class="group rounded-3xl bg-cream dark:bg-charcoal border border-classic overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between animate-view-fade">
+            <div class="group rounded-2xl bg-cream dark:bg-charcoal border border-classic overflow-hidden shadow-sm hover:border-bronze/40 transition-all duration-300 flex flex-col justify-between animate-view-fade">
               <div>
-                <div class="relative h-56 overflow-hidden">
+                <div class="relative h-40 overflow-hidden border-b border-classic">
                   <img
-                    src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80&w=800"
+                    src="assets/project-kitchen.jpg"
                     alt="Kitchen Cloud"
-                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-103"
                   />
-                  <div class="absolute inset-0 bg-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                    <a href="https://grand-syrniki-fead8e.netlify.app/" target="_blank" class="p-3 bg-bronze text-cream dark:text-charcoal rounded-xl shadow-lg hover:scale-110 transition-transform">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
-                    </a>
-                    <a href="https://github.com/manishkumar987174" target="_blank" class="p-3 bg-cream text-charcoal rounded-xl shadow-lg hover:scale-110 transition-transform">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-                    </a>
-                  </div>
                 </div>
-                <div class="p-6">
-                  <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">HTML</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">CSS</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">JavaScript</span>
+                <div class="p-5">
+                  <div class="flex flex-wrap gap-1.5 mb-3">
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">HTML</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">CSS</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">JavaScript</span>
                   </div>
-                  <h3 class="text-xl font-serif font-bold mb-3">Kitchen Cloud</h3>
-                  <p class="text-xs text-charcoal/70 dark:text-cream/70 leading-relaxed mb-4">
+                  <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-2">Kitchen Cloud</h3>
+                  <p class="text-xs text-charcoal/70 dark:text-cream/70 leading-relaxed mb-1">
                     A beautiful website for a restaurant to showcase their menu and online catering services.
                   </p>
                 </div>
               </div>
-              <div class="px-6 pb-6 pt-0">
-                <a href="https://grand-syrniki-fead8e.netlify.app/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-bronze hover:text-bronze-dark transition-colors">
-                  View Project <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+              <div class="px-5 pb-5 pt-0 flex justify-between items-center">
+                <a href="https://grand-syrniki-fead8e.netlify.app/" target="_blank" class="inline-flex items-center gap-1 text-xs font-bold text-bronze hover:text-bronze-dark transition-colors group/link">
+                  Live Demo <svg class="w-3 h-3 transition-transform group-hover/link:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                </a>
+                <a href="https://github.com/manishkumar987174" target="_blank" class="text-charcoal/60 dark:text-cream/60 hover:text-bronze dark:hover:text-bronze transition-colors" aria-label="GitHub Repository">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Project Card 6 -->
-            <div class="group rounded-3xl bg-cream dark:bg-charcoal border border-classic overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between animate-view-fade">
+            <div class="group rounded-2xl bg-cream dark:bg-charcoal border border-classic overflow-hidden shadow-sm hover:border-bronze/40 transition-all duration-300 flex flex-col justify-between animate-view-fade">
               <div>
-                <div class="relative h-56 overflow-hidden">
+                <div class="relative h-40 overflow-hidden border-b border-classic">
                   <img
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
+                    src="assets/project-employee.jpg"
                     alt="Employee Management System"
-                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-103"
                   />
-                  <div class="absolute inset-0 bg-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                    <a href="https://github.com/manishkumar987174/Employee_Management_Systemm" target="_blank" class="p-3 bg-cream text-charcoal rounded-xl shadow-lg hover:scale-110 transition-transform">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-                    </a>
-                  </div>
                 </div>
-                <div class="p-6">
-                  <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">Java</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">Spring Boot</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">React</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">MySQL</span>
+                <div class="p-5">
+                  <div class="flex flex-wrap gap-1.5 mb-3">
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">Java</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">Spring Boot</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">React</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">MySQL</span>
                   </div>
-                  <h3 class="text-xl font-serif font-bold mb-3">Employee Management</h3>
-                  <p class="text-xs text-charcoal/70 dark:text-cream/70 leading-relaxed mb-4">
+                  <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-2">Employee Management</h3>
+                  <p class="text-xs text-charcoal/70 dark:text-cream/70 leading-relaxed mb-1">
                     A system to help businesses track and manage employee records and details.
                   </p>
                 </div>
               </div>
-              <div class="px-6 pb-6 pt-0 flex items-center justify-between">
-                <span class="text-xs font-bold text-charcoal/40 dark:text-cream/40 flex items-center gap-1">
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/></svg> Not Live
+              <div class="px-5 pb-5 pt-0 flex justify-between items-center">
+                <span class="text-[10px] font-bold text-charcoal/40 dark:text-cream/40 flex items-center gap-1 uppercase tracking-wider">
+                  <span class="w-1.5 h-1.5 rounded-full bg-charcoal/30 dark:bg-cream/30"></span> Offline System
                 </span>
-                <a href="https://github.com/manishkumar987174/Employee_Management_Systemm" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-bronze hover:text-bronze-dark transition-colors">
-                  GitHub <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                <a href="https://github.com/manishkumar987174/Employee_Management_Systemm" target="_blank" class="text-charcoal/60 dark:text-cream/60 hover:text-bronze dark:hover:text-bronze transition-colors" aria-label="GitHub Repository">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Project Card 7 (Coming Soon) -->
-            <div class="group rounded-3xl bg-cream dark:bg-charcoal border border-classic border-dashed overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between animate-view-fade">
+            <div class="group rounded-2xl bg-cream dark:bg-charcoal border border-classic border-dashed overflow-hidden shadow-sm hover:border-bronze/40 transition-all duration-300 flex flex-col justify-between animate-view-fade">
               <div>
                 <!-- Image/Teaser area with a sleek gradient and placeholder text -->
-                <div class="relative h-56 bg-gradient-to-br from-bronze/10 to-charcoal-light/10 dark:from-bronze/5 dark:to-charcoal-light/5 flex items-center justify-center border-b border-classic border-dashed">
+                <div class="relative h-40 bg-gradient-to-br from-bronze/10 to-charcoal-light/10 dark:from-bronze/5 dark:to-charcoal-light/5 flex items-center justify-center border-b border-classic border-dashed">
                   <div class="text-center">
-                    <svg class="w-10 h-10 text-bronze/40 mx-auto mb-3 animate-pulse" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 21l-1.813-5.096L2 15l5.187-.904L9 9l1.813 5.096L16 15l-6.187.904zM19.071 4.929l-.707 1.986-.707-1.986-1.986-.707 1.986-.707.707-1.986.707 1.986 1.986.707-1.986.707zM20.25 10.5l-.53 1.488-.53-1.488-1.488-.53 1.488-.53.53-1.488.53 1.488 1.488.53-1.488.53z"/></svg>
-                    <span class="text-xs uppercase tracking-[0.3em] text-bronze font-bold">Coming Soon</span>
+                    <svg class="w-8 h-8 text-bronze/40 mx-auto mb-2 animate-pulse" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 21l-1.813-5.096L2 15l5.187-.904L9 9l1.813 5.096L16 15l-6.187.904zM19.071 4.929l-.707 1.986-.707-1.986-1.986-.707 1.986-.707.707-1.986.707 1.986 1.986.707-1.986.707zM20.25 10.5l-.53 1.488-.53-1.488-1.488-.53 1.488-.53.53-1.488.53 1.488 1.488.53-1.488.53z"/></svg>
+                    <span class="text-[10px] uppercase tracking-[0.25em] text-bronze font-bold">Coming Soon</span>
                   </div>
                 </div>
-                <div class="p-6">
-                  <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">Python</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">FastAPI</span>
-                    <span class="px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">AI Agents</span>
+                <div class="p-5">
+                  <div class="flex flex-wrap gap-1.5 mb-3">
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">Python</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">FastAPI</span>
+                    <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-bronze/10 text-bronze border border-bronze/20 rounded-full">AI Agents</span>
                   </div>
-                  <h3 class="text-xl font-serif font-bold mb-3">Next Innovation...</h3>
+                  <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-2">Next Innovation...</h3>
                   <p class="text-xs text-charcoal/70 dark:text-cream/70 leading-relaxed mb-4">
                     Coming soon.
                   </p>
                 </div>
               </div>
-              <div class="px-6 pb-6 pt-0">
-                <span class="text-xs font-semibold text-bronze/60 flex items-center gap-1.5">
+              <div class="px-5 pb-5 pt-0">
+                <span class="text-[10px] font-semibold text-bronze/60 flex items-center gap-1 uppercase tracking-wider">
                   <svg class="w-3.5 h-3.5 animate-spin" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/></svg> In Development
                 </span>
               </div>
