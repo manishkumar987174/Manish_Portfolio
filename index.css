@@ -140,3 +140,64 @@
   0% { transform: rotateX(-45deg) rotateY(45deg) rotateZ(0deg); }
   100% { transform: rotateX(-45deg) rotateY(45deg) rotateZ(360deg); }
 }
+
+/* Color Palette Custom Combinations */
+:root {
+  --color-bg: #111827;
+  --color-surface: #1F2937;
+  --color-card: #374151;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #E5E7EB;
+  --color-accent: #D1D5DB;
+  --color-border: #4B5563;
+  
+  /* Accent states */
+  --color-accent-hover: #FFFFFF;
+  --color-accent-light: #E5E7EB;
+}
+
+/* Force override classes */
+.bg-cream, .dark .bg-charcoal, body, html {
+  background-color: var(--color-bg) !important;
+}
+
+.bg-cream-dark, .dark .bg-charcoal-light, 
+.bg-cream-dark\/30, .dark .bg-charcoal-light\/30, 
+.bg-cream-dark\/35, .dark .bg-charcoal-light\/35, 
+.bg-cream-dark\/10, .dark .bg-charcoal-light\/10, 
+.bg-cream-dark\/50, .dark .bg-charcoal-light\/50 {
+  background-color: var(--color-surface) !important;
+}
+
+/* Specific card elements */
+.group.rounded-2xl, .p-5.sm\:p-10.bg-cream, .dark .bg-charcoal.group {
+  background-color: var(--color-card) !important;
+}
+
+/* Text overrides */
+.text-charcoal, .dark .text-cream {
+  color: var(--color-text-primary) !important;
+}
+.text-charcoal\/70, .dark .text-cream\/70, 
+.text-charcoal\/60, .dark .text-cream\/60, 
+.text-charcoal\/50, .dark .text-cream\/50 {
+  color: var(--color-text-secondary) !important;
+}
+.text-bronze, .dark .text-bronze {
+  color: var(--color-accent) !important;
+}
+.text-bronze-dark, .dark .text-bronze-dark {
+  color: var(--color-accent-hover) !important;
+}
+
+/* Border overrides */
+.border-classic, .dark .border-classic, 
+.border-bronze\/20, .dark .border-bronze\/20, 
+.border-bronze\/35, .dark .border-bronze\/35 {
+  border-color: var(--color-border) !important;
+}
+
+/* Background gradient overlays removal or update */
+.bg-\[radial-gradient\(ellipse_at_top_right\,rgba\(197\,168\,128\,0\.06\)\,transparent_50\%\)\] {
+  background-image: radial-gradient(ellipse at top right, rgba(209, 213, 219, 0.05), transparent 50%) !important;
+}

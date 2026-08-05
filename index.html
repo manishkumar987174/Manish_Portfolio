@@ -58,16 +58,20 @@
   <div id="scroll-progress"></div>
 
   <!-- Page Preloader -->
-  <div id="loader" class="fixed inset-0 z-[100] bg-cream dark:bg-charcoal flex items-center justify-center transition-all duration-700">
+  <div id="loader"
+    class="fixed inset-0 z-[100] bg-cream dark:bg-charcoal flex items-center justify-center transition-all duration-700">
     <div class="text-center relative">
       <!-- 3D Spinning Orb / Rings -->
       <div class="loader-3d-container w-24 h-24 mx-auto mb-6 relative flex items-center justify-center">
         <!-- Ring 1 (X Axis) -->
-        <div class="absolute inset-0 rounded-full border-[1.5px] border-bronze/60 animate-rotate-x pointer-events-none"></div>
+        <div class="absolute inset-0 rounded-full border-[1.5px] border-bronze/60 animate-rotate-x pointer-events-none">
+        </div>
         <!-- Ring 2 (Y Axis) -->
-        <div class="absolute inset-0 rounded-full border-[1.5px] border-bronze/40 animate-rotate-y pointer-events-none"></div>
+        <div class="absolute inset-0 rounded-full border-[1.5px] border-bronze/40 animate-rotate-y pointer-events-none">
+        </div>
         <!-- Ring 3 (Z/Diagonal Axis) -->
-        <div class="absolute inset-0 rounded-full border-[1.5px] border-bronze/20 animate-rotate-z pointer-events-none"></div>
+        <div class="absolute inset-0 rounded-full border-[1.5px] border-bronze/20 animate-rotate-z pointer-events-none">
+        </div>
         <!-- Center glowing core -->
         <div class="w-3.5 h-3.5 rounded-full bg-bronze shadow-[0_0_15px_#C5A880] animate-pulse"></div>
       </div>
@@ -82,8 +86,88 @@
     </div>
   </div>
 
+  <!-- Desktop Left Sidebar Navigation -->
+  <aside id="sidebar"
+    class="hidden md:flex flex-col justify-between fixed top-0 bottom-0 left-0 w-64 bg-cream-dark border-r border-classic z-50 p-8">
+    <div class="space-y-10">
+      <!-- Profile Branding Section -->
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-xl overflow-hidden border border-classic bg-charcoal-light flex-shrink-0">
+          <img src="photo.jpeg" alt="Manish Kumar" class="w-full h-full object-cover"
+            onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=120'" />
+        </div>
+        <div class="min-w-0">
+          <h2 class="text-base font-serif font-black tracking-tight text-charcoal dark:text-cream leading-tight">Manish
+            Kumar</h2>
+          <p class="text-[10px] text-bronze font-mono uppercase tracking-wider">Python Developer</p>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="flex flex-col space-y-4">
+        <a href="#hero"
+          class="flex items-center gap-3 py-2.5 px-3 rounded-xl text-sm font-bold text-charcoal/75 dark:text-cream/75 hover:bg-charcoal-light hover:text-bronze transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+          </svg>
+          Home
+        </a>
+        <a href="#about"
+          class="flex items-center gap-3 py-2.5 px-3 rounded-xl text-sm font-bold text-charcoal/75 dark:text-cream/75 hover:bg-charcoal-light hover:text-bronze transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+          </svg>
+          About
+        </a>
+        <a href="#skills"
+          class="flex items-center gap-3 py-2.5 px-3 rounded-xl text-sm font-bold text-charcoal/75 dark:text-cream/75 hover:bg-charcoal-light hover:text-bronze transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+          </svg>
+          Skills
+        </a>
+        <a href="#projects"
+          class="flex items-center gap-3 py-2.5 px-3 rounded-xl text-sm font-bold text-charcoal/75 dark:text-cream/75 hover:bg-charcoal-light hover:text-bronze transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 13.5h3.86a2.25 2.25 0 012.008 1.24l.885 1.77a2.25 2.25 0 002.007 1.24h1.98a2.25 2.25 0 002.007-1.24l.885-1.77a2.25 2.25 0 012.007-1.24h3.86m-18 0h18a2.25 2.25 0 012.25 2.25v4.25a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 21v-4.25a2.25 2.25 0 012.25-2.25z" />
+          </svg>
+          Projects
+        </a>
+        <a href="#experience"
+          class="flex items-center gap-3 py-2.5 px-3 rounded-xl text-sm font-bold text-charcoal/75 dark:text-cream/75 hover:bg-charcoal-light hover:text-bronze transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M20.25 14.15v5.6c0 1.077-.873 1.95-1.95 1.95H5.7c-1.077 0-1.95-.873-1.95-1.95v-5.6M3.75 14.25h16.5M15 9.75V4.5A1.5 1.5 0 0013.5 3h-3A1.5 1.5 0 009 4.5v5.25m-6 0h18a1.5 1.5 0 011.5 1.5v3a1.5 1.5 0 01-1.5 1.5H3a1.5 1.5 0 01-1.5-1.5v-3a1.5 1.5 0 011.5-1.5z" />
+          </svg>
+          Experience
+        </a>
+        <a href="#contact"
+          class="flex items-center gap-3 py-2.5 px-3 rounded-xl text-sm font-bold text-charcoal/75 dark:text-cream/75 hover:bg-charcoal-light hover:text-bronze transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+          </svg>
+          Contact
+        </a>
+      </nav>
+    </div>
+
+    <!-- Theme toggles at the bottom -->
+    <!-- <div class="flex items-center justify-between border-t border-classic pt-6">
+      <button id="theme-toggle-sidebar" class="p-2.5 rounded-full border border-classic bg-cream/50 dark:bg-charcoal-light/50 text-bronze hover:bg-bronze/10 transition-all focus:outline-none flex items-center justify-center" aria-label="Toggle Theme">
+        <svg id="theme-moon-sidebar" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/></svg>
+        <svg id="theme-sun-sidebar" class="w-4 h-4 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m0 13.5V21M4.22 4.22l1.59 1.59m12.38 12.38l1.59 1.59M3 12h2.25m13.5 0H21M4.22 19.78l1.59-1.59M17.81 6.19l1.59-1.59M12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9z"/></svg>
+      </button>
+      <span class="text-[9px] uppercase font-mono tracking-widest text-charcoal/40 dark:text-cream/40">v1.2.0</span>
+    </div> -->
+  </aside>
+
   <!-- Navigation Header -->
-  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent py-5">
+  <nav id="navbar" class="md:hidden fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent py-5">
     <div class="max-w-[92%] mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
       <a href="#"
         class="text-2xl font-serif font-black tracking-tight text-charcoal dark:text-cream hover:text-bronze dark:hover:text-bronze transition-colors">
@@ -154,9 +238,9 @@
   </nav>
 
   <!-- Main Content Area -->
-  <main>
+  <main class="md:pl-64">
     <!-- Hero Section -->
-    <section class="relative min-h-screen pt-[180px] md:pt-36 pb-20 flex items-center overflow-hidden">
+    <section class="relative min-h-screen pt-24 md:pt-12 pb-20 flex items-center overflow-hidden">
       <!-- Background curves/grids -->
       <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(197,168,128,0.06),transparent_50%)]">
       </div>
@@ -164,14 +248,14 @@
         class="absolute top-[30%] left-[-10%] w-[40rem] h-[40rem] rounded-full bg-bronze/3 blur-[120px] pointer-events-none">
       </div>
 
-      <div class="max-w-[92%] mx-auto px-6 sm:px-8 lg:px-12 w-full relative z-10">
+      <div class="max-w-[92%]  px-6 sm:px-8 lg:px-12 w-full relative z-10">
         <div class="grid md:grid-cols-12 gap-12 items-center">
           <!-- Hero Left (Content) -->
           <div class="md:col-span-7 text-left order-2 md:order-1 animate-hero-fade">
             <div class="flex items-center gap-3 mb-6">
               <span
-                class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full border border-bronze/20 bg-bronze/5 text-bronze text-xs font-bold tracking-widest uppercase">
-                <span class="w-1.5 h-1.5 rounded-full bg-bronze animate-pulse"></span>
+                class="inline-flex items-center gap-2 py-2.5 px-5 rounded-full border border-bronze/20 bg-bronze/5 text-bronze text-xs font-bold tracking-widest uppercase">
+                <span class="w-2 h-1.5 rounded-full bg-bronze animate-pulse"></span>
                 Available for Opportunities
               </span>
             </div>
@@ -183,7 +267,7 @@
             </h1>
 
             <h2 class="text-lg md:text-xl font-mono text-bronze uppercase tracking-wider mb-4 font-bold">
-              Software Developer • Full Stack Developer • 15+ Projects
+              Python Developer • Full Stack Developer • Software Developer
             </h2>
 
             <div class="h-10 mb-6 flex items-center">
@@ -192,9 +276,12 @@
               </p>
             </div>
 
-            <p class="text-base md:text-lg text-charcoal/70 dark:text-cream/70 mb-10 max-w-xl leading-relaxed">
-              I am a software engineer who loves building clean, fast, and user-friendly web applications. I work with
-              technologies like React, Node.js, databases, and automation tools to solve real-world problems.
+            <p class="text-base md:text-lg text-charcoal/70 dark:text-cream/70 mb-10  leading-relaxed">
+              I am a Software Developer passionate about building clean, scalable, and user-centric web applications. I
+              have experience in MERN stack development and Python, with a strong focus on developing reliable backend
+              systems, automating workflows, and creating efficient web scraping solutions. I enjoy solving real-world
+              problems through technology and continuously improving my skills by learning modern tools, frameworks, and
+              best practices.
             </p>
 
             <div class="flex flex-wrap gap-4">
@@ -347,130 +434,270 @@
         <!-- Section Title -->
         <div class="mb-16 text-center animate-view-fade">
           <span class="text-xs font-bold tracking-[0.25em] text-bronze uppercase block mb-3">Technical Expertise</span>
-          <h2 class="text-4xl lg:text-5xl font-serif">My Skill Set</h2>
+          <h2 class="text-4xl lg:text-5xl font-serif">Tech Stack &amp; Skills</h2>
           <div class="w-12 h-[1px] bg-bronze/40 mx-auto mt-4"></div>
         </div>
 
         <!-- Skills Categories Grid -->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Category 1: Languages -->
-          <div
-            class="p-6 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic shadow-sm animate-view-fade flex flex-col justify-between">
-            <div>
-              <div class="w-10 h-10 rounded-xl bg-bronze/10 flex items-center justify-center mb-5 text-bronze mx-auto">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+        <div class="space-y-12">
+
+          <!-- Frontend Category -->
+          <div class="animate-view-fade">
+            <h3 class="text-lg font-bold text-charcoal dark:text-cream mb-6 tracking-wide">Frontend</h3>
+            <div class="flex flex-wrap gap-4">
+              <!-- React.js -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#00d8ff] fill-none" viewBox="-11.5 -10.23174 23 20.46348">
+                  <circle cx="0" cy="0" r="2.05" fill="currentColor" />
+                  <g stroke="currentColor" stroke-width="1.2" fill="none">
+                    <ellipse rx="11" ry="4.2" />
+                    <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+                    <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+                  </g>
                 </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">React.js</span>
               </div>
-              <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-4 text-center">Languages</h3>
-              <div class="divide-y divide-bronze/10 dark:divide-bronze/5">
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">JavaScript (ES6+)</span>
-                </div>
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Java</span>
-                </div>
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Python</span>
-                </div>
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">C</span>
-                </div>
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">AL</span>
-                </div>
+
+              <!-- JavaScript -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#f7df1e] fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M0 0h24v24H0V0zm22.034 18.5c-.007-1.442-.708-2.241-2.107-3.102l-.539-.329c-.845-.516-1.123-.889-1.123-1.448 0-.58.45-1.019 1.139-1.019.723 0 1.102.31 1.258.91l1.62-.99c-.43-1.012-1.305-1.722-2.879-1.722-2.034 0-3.238 1.429-3.238 2.879 0 2.213 1.349 3.018 2.761 3.886l.502.308c1.042.636 1.416 1.05 1.416 1.764 0 .788-.637 1.328-1.579 1.328-1.157 0-1.664-.616-1.885-1.428l-1.685.83c.337 1.487 1.53 2.4 3.57 2.4 2.378 0 3.712-1.448 3.712-3.416zm-7.662-.238c-.007-1.666-.827-2.434-2.302-3.376l-.43-.279c-.664-.429-.915-.65-.915-1.092 0-.429.355-.724.855-.724.586 0 .848.293.996.696l1.531-.837c-.383-.997-1.178-1.696-2.527-1.696-1.887 0-2.88 1.258-2.88 2.583 0 1.956 1.111 2.662 2.27 3.398l.422.266c.866.546 1.085.789 1.085 1.282 0 .56-.476.924-1.132.924-.766 0-1.171-.397-1.343-.997l-1.602.837c.39 1.353 1.312 2.08 2.945 2.08 2.072 0 3.125-1.229 3.125-2.962z" />
+                </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">JavaScript</span>
+              </div>
+
+              <!-- Tailwind CSS -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#38bdf8] fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z" />
+                </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">Tailwind
+                  CSS</span>
+              </div>
+
+              <!-- HTML5 -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#e34f26] fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M1.5 0h21l-1.91 21.563L12 24l-8.59-2.437L1.5 0zm17.042 5.523h-13.1l.332 3.693h12.428l-.348 3.882L12 14.618l-5.836-1.52-.256-2.883h3.585l.135 1.52L12 12.443l2.378-.621.246-2.732H6.182l-.666-7.391H18.77l-.228 2.824z" />
+                </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">HTML5</span>
+              </div>
+
+              <!-- CSS3 -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#1572b6] fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M1.5 0h21l-1.91 21.563L12 24l-8.59-2.437L1.5 0zm17.042 5.523H5.442l.332 3.693h10.938l-.348 3.882L12 14.618l-4.336-1.127-.256-2.883H3.882l.523 5.882L12 18.732l7.595-2.228.947-10.981z" />
+                </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">CSS3</span>
+              </div>
+
+              <!-- Bootstrap -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#7952b3] fill-current" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M7.653 14.07h.78c1.88 0 3.058-.98 3.058-2.614 0-1.18-.774-2.022-1.96-2.23v-.076c.942-.224 1.54-.975 1.54-1.954 0-1.303-.984-2.148-2.773-2.148h-2.2v9.022zm-1.85-10.07h2.235c1.117 0 1.76.5 1.76 1.341 0 .822-.647 1.346-1.76 1.346H5.803V4zm0 3.738h2.383c1.177 0 1.88.528 1.88 1.405 0 .918-.703 1.47-1.88 1.47H5.803V7.738z" />
+                  <path d="M14 14V2H2v12h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">Bootstrap</span>
               </div>
             </div>
           </div>
 
-          <!-- Category 2: Frontend -->
-          <div
-            class="p-6 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic shadow-sm animate-view-fade flex flex-col justify-between">
-            <div>
-              <div class="w-10 h-10 rounded-xl bg-bronze/10 flex items-center justify-center mb-5 text-bronze mx-auto">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h17.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125H3.375a1.125 1.125 0 01-1.125-1.125V7.125zM10.5 11.25H3.75v5.625c0 .207.168.375.375.375h6.375V11.25zm1.5 0v6h7.875a.375.375 0 00.375-.375V11.25H12z" />
+          <!-- Backend Category -->
+          <div class="animate-view-fade">
+            <h3 class="text-lg font-bold text-charcoal dark:text-cream mb-6 tracking-wide">Backend</h3>
+            <div class="flex flex-wrap gap-4">
+              <!-- Node.js -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#339933] fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M12 24c-1.114 0-2.186-.596-2.735-1.579L2.83 10.741c-.546-.984-.546-2.155 0-3.138L9.265 1.58A3.09 3.09 0 0 1 12 0c1.114 0 2.186.596 2.735 1.58l6.435 10.823c.546.983.546 2.154 0 3.137l-6.435 10.88c-.549.983-1.621 1.58-2.735 1.58zm-4.71-12.783V16.5H9v-5.267c0-1.229.479-1.905 1.439-1.905.807 0 1.258.455 1.258 1.401v5.771h1.722v-6.009c0-2.179-1.114-3.21-2.91-3.21-1.378 0-2.215.656-2.612 1.564V7.5H6.18v6.284h1.11z" />
                 </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">Node.js</span>
               </div>
-              <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-4 text-center">Frontend</h3>
-              <div class="divide-y divide-bronze/10 dark:divide-bronze/5">
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">React.js</span>
-                </div>
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Tailwind CSS</span>
-                </div>
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">HTML5 / CSS3</span>
-                </div>
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Bootstrap</span>
-                </div>
+
+              <!-- Express.js -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#ffffff] fill-none stroke-current" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">Express.js</span>
+              </div>
+
+              <!-- Python -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#3776ab] fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M14.25.189a6.007 6.007 0 0 0-4.636 2.083l-.062.062a4.425 4.425 0 0 0-.256 5.438l.063.104h3.96a2.22 2.22 0 0 1 2.22 2.22v3.96h2.22a2.22 2.22 0 0 0 2.22-2.22V6.666a4.444 4.444 0 0 0-4.444-4.444h-1.325V.189zM9.75 23.811a6.007 6.007 0 0 0 4.636-2.083l.062-.062a4.425 4.425 0 0 0 0 5.438l-.063-.104H10.68a2.22 2.22 0 0 1-2.22-2.22v-3.96H6.24a2.22 2.22 0 0 0-2.22 2.22v5.139a4.444 4.444 0 0 0 4.444 4.444h1.325v2.034z" />
+                </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">Python</span>
+              </div>
+
+              <!-- Java -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#f89820] fill-none stroke-current" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">Java</span>
+              </div>
+
+              <!-- C -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#00599c] fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.65 15.65c-1.35.85-3.05 1.1-4.65.65-2.2-.6-3.8-2.6-3.8-4.9a5 5 0 0 1 5-5c1.6 0 3.05.65 4.05 1.75l-1.9 1.9c-.55-.6-1.3-.95-2.15-.95a2.75 2.75 0 0 0-2.75 2.75c0 1.15.7 2.15 1.75 2.5.65.2 1.35.1 1.9-.2l2.65 2.5z" />
+                </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">C</span>
+              </div>
+
+              <!-- AL -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#0078d4]" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.8">
+                  <rect x="3" y="3" width="18" height="18" rx="4" />
+                  <text x="12" y="15.5" font-family="JetBrains Mono, monospace" font-size="10" font-weight="900"
+                    text-anchor="middle" fill="currentColor">AL</text>
+                </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">Dynamics
+                  AL</span>
+              </div>
+
+              <!-- REST APIs -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#10b981] fill-none stroke-current" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z" />
+                </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">REST
+                  APIs</span>
+              </div>
+
+              <!-- JWT Auth -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#fbbf24] fill-none stroke-current" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">JWT
+                  Authentication</span>
               </div>
             </div>
           </div>
 
-          <!-- Category 3: Backend -->
-          <div
-            class="p-6 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic shadow-sm animate-view-fade flex flex-col justify-between">
-            <div>
-              <div class="w-10 h-10 rounded-xl bg-bronze/10 flex items-center justify-center mb-5 text-bronze mx-auto">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.128 16.556 18 12 18s-8.25-1.872-8.25-4.125v-3.75" />
+          <!-- Database Category -->
+          <div class="animate-view-fade">
+            <h3 class="text-lg font-bold text-charcoal dark:text-cream mb-6 tracking-wide">Database</h3>
+            <div class="flex flex-wrap gap-4">
+              <!-- MongoDB -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#47a248] fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .003c-.075 0-.15.006-.226.018C8.384 1.341 5.86 4.7 5.86 8.784c0 3.738 2.056 6.84 5.344 8.742v4.887a.794.794 0 0 0 1.157.705c3.276-1.921 5.313-5.012 5.313-8.73 0-4.093-2.52-7.449-5.918-8.769a.795.795 0 0 0-.756-.018zM12 15.688c-2.482-1.464-4.032-3.834-4.032-6.666 0-3.32 2.012-6.038 4.032-7.062V15.69z" />
                 </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">MongoDB</span>
               </div>
-              <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-4 text-center">Backend</h3>
-              <div class="divide-y divide-bronze/10 dark:divide-bronze/5">
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Node.js</span>
-                </div>
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Express.js</span>
-                </div>
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">REST APIs</span>
-                </div>
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">JWT Auth</span>
-                </div>
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Python</span>
-                </div>
+
+              <!-- MySQL -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#00758f] fill-none stroke-current" stroke-width="1.8" viewBox="0 0 24 24">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                  <path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6" />
+                </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">MySQL</span>
               </div>
             </div>
           </div>
 
-          <!-- Category 4: Tools & Others -->
-          <div
-            class="p-6 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic shadow-sm animate-view-fade flex flex-col justify-between">
-            <div>
-              <div class="w-10 h-10 rounded-xl bg-bronze/10 flex items-center justify-center mb-5 text-bronze mx-auto">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M8.25 3v1.5M12 3v1.5m3.75-1.5v1.5M8.25 19.5V21M12 19.5V21m3.75-1.5V21m-12-11.25h1.5m16.5 0h1.5m-19.5 3h1.5m16.5 0h1.5m-3-6a2.25 2.25 0 00-2.25-2.25h-9a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9zM10.5 10.5h3v3h-3v-3z" />
+          <!-- Tools & DevOps Category -->
+          <div class="animate-view-fade">
+            <h3 class="text-lg font-bold text-charcoal dark:text-cream mb-6 tracking-wide">Tools &amp; DevOps</h3>
+            <div class="flex flex-wrap gap-4">
+              <!-- n8n Automation -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#ff6d5a]" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.8">
+                  <rect x="3" y="3" width="18" height="18" rx="4" />
+                  <text x="12" y="15.5" font-family="JetBrains Mono, monospace" font-size="9" font-weight="900"
+                    text-anchor="middle" fill="currentColor">n8n</text>
                 </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">n8n
+                  Workflow Automation</span>
               </div>
-              <h3 class="text-lg font-serif font-bold text-charcoal dark:text-cream mb-4 text-center">Tools & Databases
-              </h3>
-              <div class="divide-y divide-bronze/10 dark:divide-bronze/5">
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">n8n Automation</span>
-                </div>
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Git / GitHub</span>
-                </div>
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">MongoDB / MySQL</span>
-                </div>
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Postman</span>
-                </div>
-                <div class="py-2.5 text-center">
-                  <span class="text-sm font-medium text-charcoal/80 dark:text-cream/80">Web Scraping</span>
-                </div>
+
+              <!-- Git / GitHub -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#f05032] fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M23.384 11.41L12.59.616a1.686 1.686 0 0 0-2.384 0L7.545 3.277l2.913 2.912a1.69 1.69 0 0 1 2.378-.006l2.923-2.923a.17.17 0 0 0-.007-.24l-.066-.066a1.69 1.69 0 0 0-2.38 0l-2.613 2.614v5.438l2.613-2.613a1.69 1.69 0 0 1 2.38 0l2.7 2.7a1.69 1.69 0 0 1 0 2.38l-2.7 2.7a1.69 1.69 0 0 1-2.38 0l-2.7-2.7a1.69 1.69 0 0 1 0-2.38l2.613-2.613v-5.438L7.338 6.55a1.69 1.69 0 0 1-.006 2.378l-2.923 2.923a.17.17 0 0 0 .24.24l.066.066a1.69 1.69 0 0 0 2.38 0l2.613-2.614v5.438L6.85 17.59a1.69 1.69 0 0 1-2.38 0l-2.7-2.7a1.69 1.69 0 0 1 0-2.38l2.7-2.7a1.69 1.69 0 0 1 2.38 0l2.7 2.7a1.69 1.69 0 0 1 0 2.38l-2.613 2.613v5.438l3.666 3.667a1.686 1.686 0 0 0 2.384 0l10.793-10.793a1.686 1.686 0 0 0 0-2.384z" />
+                </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">Git
+                  &amp; GitHub</span>
+              </div>
+
+              <!-- Postman -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#ff6c37] fill-none stroke-current" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8c0-.83.67-1.5 1.5-1.5h3.94l.4.92zm2.84-2.84c.3-.3.73-.4 1.15-.34a9.96 9.96 0 014.28 2.05l-2.02 2.02a6.002 6.002 0 01-3.41-3.73zm-10.8 10.8c-.3.3-.73.4-1.15.34a9.96 9.96 0 01-4.28-2.05l2.02-2.02a6.002 6.002 0 013.41 3.73zM22 2l-6 6m0 0l-4-4.8L22 2z" />
+                </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">Postman
+                  API</span>
+              </div>
+
+              <!-- Web Scraping -->
+              <div
+                class="group relative flex items-center justify-center w-16 h-16 rounded-2xl bg-cream-dark dark:bg-charcoal-light/35 border border-classic hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm cursor-pointer">
+                <svg class="w-8 h-8 text-[#3b82f6] fill-none stroke-current" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m-3-3h6" />
+                </svg>
+                <span
+                  class="absolute bottom-full mb-2 hidden group-hover:flex px-2 py-1 bg-charcoal text-cream text-[10px] rounded font-mono border border-classic whitespace-nowrap z-30">Web
+                  Scraping</span>
               </div>
             </div>
           </div>
@@ -819,14 +1046,18 @@
             <div class="relative timeline-line ml-6 pl-10 space-y-12">
               <!-- Timeline item: RDSolutions -->
               <div class="timeline-node relative opacity-0">
-                <div class="absolute -left-[46.5px] top-1.5 w-3 h-3 rounded-full bg-bronze ring-4 ring-cream dark:ring-charcoal"></div>
-                <span class="text-xs font-bold text-bronze uppercase tracking-[0.2em] block mb-2 font-mono">Jul 2026 – Present</span>
+                <div
+                  class="absolute -left-[30px] top-1.5 w-3 h-3 rounded-full bg-bronze ring-4 ring-cream dark:ring-charcoal">
+                </div>
+                <span class="text-xs font-bold text-bronze uppercase tracking-[0.2em] block mb-2 font-mono">Jul 2026 –
+                  Present</span>
                 <h3 class="text-xl font-serif font-bold text-charcoal dark:text-cream">Associate Python Developer</h3>
                 <p class="text-sm font-semibold text-charcoal/60 dark:text-cream/60 mb-4">RDSolutions • Noida, India</p>
                 <ul class="space-y-3.5">
                   <li class="text-[13px] text-charcoal/70 dark:text-cream/70 flex items-start gap-2.5">
                     <span class="text-bronze mt-0.5 font-bold">•</span>
-                    Writing custom Python scripts utilizing TLS Client to extract large-scale web data comprising lakhs of rows.
+                    Writing custom Python scripts utilizing TLS Client to extract large-scale web data comprising lakhs
+                    of rows.
                   </li>
                   <li class="text-[13px] text-charcoal/70 dark:text-cream/70 flex items-start gap-2.5">
                     <span class="text-bronze mt-0.5 font-bold">•</span>
@@ -842,7 +1073,7 @@
               <!-- Timeline item: Recruweb Resources -->
               <div class="timeline-node relative opacity-0">
                 <div
-                  class="absolute -left-[46.5px] top-1.5 w-3 h-3 rounded-full bg-bronze ring-4 ring-cream dark:ring-charcoal">
+                  class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-bronze ring-4 ring-cream dark:ring-charcoal">
                 </div>
                 <span class="text-xs font-bold text-bronze uppercase tracking-[0.2em] block mb-2 font-mono">May 2026 –
                   Jun 2026</span>
@@ -868,7 +1099,7 @@
 
               <div class="timeline-node relative opacity-0">
                 <div
-                  class="absolute -left-[46.5px] top-1.5 w-3 h-3 rounded-full bg-bronze ring-4 ring-cream dark:ring-charcoal">
+                  class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-bronze ring-4 ring-cream dark:ring-charcoal">
                 </div>
                 <span class="text-xs font-bold text-bronze uppercase tracking-[0.2em] block mb-2 font-mono">Jul 2025 –
                   Aug 2025</span>
@@ -908,7 +1139,7 @@
             <div class="relative timeline-line ml-6 pl-10 space-y-12">
               <div class="timeline-node relative opacity-0">
                 <div
-                  class="absolute -left-[46.5px] top-1.5 w-3 h-3 rounded-full bg-bronze ring-4 ring-cream dark:ring-charcoal">
+                  class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-bronze ring-4 ring-cream dark:ring-charcoal">
                 </div>
                 <span class="text-xs font-bold text-bronze uppercase tracking-[0.2em] block mb-2 font-mono">2022 –
                   2026</span>
@@ -920,7 +1151,7 @@
               </div>
               <div class="timeline-node relative opacity-0">
                 <div
-                  class="absolute -left-[46.5px] top-1.5 w-3 h-3 rounded-full bg-bronze ring-4 ring-cream dark:ring-charcoal">
+                  class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-bronze ring-4 ring-cream dark:ring-charcoal">
                 </div>
                 <span
                   class="text-xs font-bold text-bronze uppercase tracking-[0.2em] block mb-2 font-mono">Completed</span>
@@ -930,7 +1161,7 @@
               </div>
               <div class="timeline-node relative opacity-0">
                 <div
-                  class="absolute -left-[46.5px] top-1.5 w-3 h-3 rounded-full bg-bronze ring-4 ring-cream dark:ring-charcoal">
+                  class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-bronze ring-4 ring-cream dark:ring-charcoal">
                 </div>
                 <span
                   class="text-xs font-bold text-bronze uppercase tracking-[0.2em] block mb-2 font-mono">Completed</span>
@@ -1081,7 +1312,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="py-12 border-t border-classic bg-cream dark:bg-charcoal">
+  <footer class="py-12 border-t border-classic bg-cream dark:bg-charcoal md:ml-64">
     <div class="max-w-[92%] mx-auto px-6 sm:px-8 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-8">
       <p class="text-charcoal/50 dark:text-cream/50 text-xs">
         &copy; <span id="footer-year">2026</span> Manish Kumar. All rights reserved.
@@ -1178,7 +1409,7 @@
   </div>
 
   <!-- Script Entry Points -->
-  <script type="module" src="main.js"></script>
+  <script type="module" src="main.js?v=5"></script>
 
   <!-- Script to set dynamic footer year -->
   <script>

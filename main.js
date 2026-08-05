@@ -31,6 +31,7 @@ if (loader) {
 
 // --- Classic Theme Toggle (Light / Dark) ---
 const themeToggleBtn = document.getElementById('theme-toggle');
+const themeToggleSidebarBtn = document.getElementById('theme-toggle-sidebar');
 const htmlEl = document.documentElement;
 
 // Check stored theme or system preference
@@ -38,31 +39,41 @@ const savedTheme = localStorage.getItem('theme');
 const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
   htmlEl.classList.add('dark');
-  updateThemeIcon(true);
+  updateThemeIcons(true);
 } else {
   htmlEl.classList.remove('dark');
-  updateThemeIcon(false);
+  updateThemeIcons(false);
 }
+
+const toggleThemeAction = () => {
+  const isDark = htmlEl.classList.toggle('dark');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  updateThemeIcons(isDark);
+};
 
 if (themeToggleBtn) {
-  themeToggleBtn.addEventListener('click', () => {
-    const isDark = htmlEl.classList.toggle('dark');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    updateThemeIcon(isDark);
-  });
+  themeToggleBtn.addEventListener('click', toggleThemeAction);
+}
+if (themeToggleSidebarBtn) {
+  themeToggleSidebarBtn.addEventListener('click', toggleThemeAction);
 }
 
-function updateThemeIcon(isDark) {
+function updateThemeIcons(isDark) {
   const sunIcon = document.getElementById('theme-sun');
   const moonIcon = document.getElementById('theme-moon');
-  if (sunIcon && moonIcon) {
-    if (isDark) {
-      sunIcon.classList.remove('hidden');
-      moonIcon.classList.add('hidden');
-    } else {
-      sunIcon.classList.add('hidden');
-      moonIcon.classList.remove('hidden');
-    }
+  const sunSidebarIcon = document.getElementById('theme-sun-sidebar');
+  const moonSidebarIcon = document.getElementById('theme-moon-sidebar');
+
+  if (isDark) {
+    if (sunIcon) sunIcon.classList.remove('hidden');
+    if (moonIcon) moonIcon.classList.add('hidden');
+    if (sunSidebarIcon) sunSidebarIcon.classList.remove('hidden');
+    if (moonSidebarIcon) moonSidebarIcon.classList.add('hidden');
+  } else {
+    if (sunIcon) sunIcon.classList.add('hidden');
+    if (moonIcon) moonIcon.classList.remove('hidden');
+    if (sunSidebarIcon) sunSidebarIcon.classList.add('hidden');
+    if (moonSidebarIcon) moonSidebarIcon.classList.remove('hidden');
   }
 }
 
@@ -120,7 +131,7 @@ if (mobileMenuBtn && mobileMenu) {
 // --- Typewriter Effect in Hero ---
 const typeTarget = document.getElementById('typewriter-text');
 if (typeTarget) {
-  const words = ["Software Developer", "Full Stack Developer", "15+ Projects Completed"];
+  const words = ["Python Developer", "Full Stack Developer", "Software Developer"];
   let wordIndex = 0;
   let text = '';
   let isDeleting = false;
