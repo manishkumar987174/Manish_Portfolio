@@ -2,15 +2,29 @@ import { animate, inView, scroll } from 'https://cdn.jsdelivr.net/npm/motion@11.
 
 // --- Page Loader ---
 const loader = document.getElementById('loader');
+const loaderPercent = document.getElementById('loader-percent');
+
 if (loader) {
   document.body.style.overflow = 'hidden';
-  setTimeout(() => {
-    animate(loader, { opacity: 0, scale: 0.95 }, { duration: 0.6, easing: 'ease-out' }).then(() => {
-      loader.remove();
-      document.body.style.overflow = 'auto';
-      triggerEntryAnimations();
-    });
-  }, 1000);
+  
+  let progress = 0;
+  const interval = setInterval(() => {
+    progress += Math.floor(Math.random() * 12) + 4;
+    if (progress >= 100) {
+      progress = 100;
+      clearInterval(interval);
+      
+      setTimeout(() => {
+        animate(loader, { opacity: 0, scale: 0.95 }, { duration: 0.6, easing: 'ease-out' }).then(() => {
+          loader.remove();
+          document.body.style.overflow = 'auto';
+          triggerEntryAnimations();
+        });
+      }, 250);
+    }
+    
+    if (loaderPercent) loaderPercent.textContent = `${progress}%`;
+  }, 40);
 } else {
   triggerEntryAnimations();
 }
