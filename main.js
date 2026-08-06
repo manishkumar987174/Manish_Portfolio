@@ -1,6 +1,5 @@
 import { animate, inView, scroll } from 'https://cdn.jsdelivr.net/npm/motion@11.11.17/+esm';
 
-// --- Page Loader ---
 const loader = document.getElementById('loader');
 const loaderPercent = document.getElementById('loader-percent');
 
@@ -29,12 +28,10 @@ if (loader) {
   triggerEntryAnimations();
 }
 
-// --- Classic Theme Toggle (Light / Dark) ---
 const themeToggleBtn = document.getElementById('theme-toggle');
 const themeToggleSidebarBtn = document.getElementById('theme-toggle-sidebar');
 const htmlEl = document.documentElement;
 
-// Check stored theme or system preference
 const savedTheme = localStorage.getItem('theme');
 const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
@@ -77,10 +74,9 @@ function updateThemeIcons(isDark) {
   }
 }
 
-// --- Scroll Progress and Sticky Navbar ---
 const navbar = document.getElementById('navbar');
 scroll((progress, info) => {
-  // Sticky Navbar glassmorphism class on scroll
+  
   if (navbar && info && info.y) {
     if (info.y.current > 20) {
       navbar.classList.add('classic-glass', 'py-3');
@@ -92,13 +88,11 @@ scroll((progress, info) => {
   }
 });
 
-// Scroll progress bar
 const scrollProgress = document.getElementById('scroll-progress');
 if (scrollProgress) {
   scroll(animate(scrollProgress, { scaleX: [0, 1] }));
 }
 
-// --- Mobile Navigation Menu ---
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 const menuOpenIcon = document.getElementById('menu-open-icon');
@@ -113,12 +107,11 @@ if (mobileMenuBtn && mobileMenu) {
     } else {
       menuOpenIcon.classList.add('hidden');
       menuCloseIcon.classList.remove('hidden');
-      // Animate slide down
+      
       animate(mobileMenu, { opacity: [0, 1], y: [-20, 0] }, { duration: 0.3 });
     }
   });
 
-  // Close menu on link click
   mobileMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu.classList.add('hidden');
@@ -128,7 +121,6 @@ if (mobileMenuBtn && mobileMenu) {
   });
 }
 
-// --- Typewriter Effect in Hero ---
 const typeTarget = document.getElementById('typewriter-text');
 if (typeTarget) {
   const words = ["Python Developer", "Full Stack Developer", "Software Developer"];
@@ -145,7 +137,7 @@ if (typeTarget) {
       text = currentWord.substring(0, text.length + 1);
     }
 
-    typeTarget.textContent = text || '\u00A0'; // Use non-breaking space when empty
+    typeTarget.textContent = text || '\u00A0'; 
 
     if (!isDeleting && text === currentWord) {
       setTimeout(() => { isDeleting = true; }, 2000);
@@ -162,8 +154,6 @@ if (typeTarget) {
   setTimeout(handleTyping, 1000);
 }
 
-
-// --- Contact Form Submission ---
 const contactForm = document.getElementById('contact-form');
 const submitBtn = document.getElementById('submit-btn');
 const submitText = document.getElementById('submit-text');
@@ -182,7 +172,6 @@ if (contactForm) {
 
     if (!name || !email || !message) return;
 
-    // Show Loading state
     if (submitBtn) submitBtn.disabled = true;
     if (submitLoader) submitLoader.classList.remove('hidden');
     if (submitText) submitText.textContent = 'Sending...';
@@ -190,7 +179,7 @@ if (contactForm) {
     if (statusError) statusError.classList.add('hidden');
 
     try {
-      // Attempt sending via express nodemailer server route
+      
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -207,8 +196,7 @@ if (contactForm) {
       }
     } catch (error) {
       console.warn('Backend API submission failed, falling back to mailto client link.', error);
-      
-      // Fallback: Use mailto link
+
       try {
         const mailtoSubject = encodeURIComponent(`Portfolio Message from ${name}`);
         const mailtoBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
@@ -244,7 +232,6 @@ function showStatus(isSuccess, msg = '') {
   }
 }
 
-// --- Scroll-to-Top Button ---
 const scrollTopBtn = document.getElementById('scroll-top-btn');
 if (scrollTopBtn) {
   scroll((progress, info) => {
@@ -262,9 +249,8 @@ if (scrollTopBtn) {
   });
 }
 
-// --- Motion.js Animation Setup ---
 function triggerEntryAnimations() {
-  // 1. Hero text entry animations
+  
   animate('.animate-hero-fade', { opacity: [0, 1], y: [40, 0] }, { 
     delay: 0.15,
     duration: 0.8,
@@ -277,7 +263,6 @@ function triggerEntryAnimations() {
     easing: 'ease-out'
   });
 
-  // 2. Scroll trigger animations for sections
   inView('.animate-view-fade', (info) => {
     animate(info.target, { opacity: [0, 1], y: [30, 0] }, { 
       duration: 0.7, 
@@ -286,7 +271,7 @@ function triggerEntryAnimations() {
   });
 
   inView('.animate-view-timeline', (info) => {
-    // Reveal child nodes one by one
+    
     const nodes = info.target.querySelectorAll('.timeline-node');
     if (nodes.length > 0) {
       animate(nodes, { opacity: [0, 1], x: [-15, 0] }, {
@@ -297,16 +282,13 @@ function triggerEntryAnimations() {
   });
 }
 
-
-// --- Music Player (Lady Gaga & Bruno Mars - Die With A Smile) ---
 const audio = document.getElementById('portfolio-audio');
 const musicBtn = document.getElementById('music-play-btn');
 let isPlaying = false;
 
 if (musicBtn && audio) {
   musicBtn.addEventListener('click', toggleMusic);
-  
-  // Hook HTML5 audio events to sync visual play states
+
   audio.addEventListener('play', () => setMusicState(true));
   audio.addEventListener('pause', () => setMusicState(false));
 }
@@ -345,7 +327,6 @@ function setMusicState(playing) {
   }
 }
 
-// --- Music Player Scroll Visibility ---
 const musicPlayerContainer = document.getElementById('music-player-container');
 if (musicPlayerContainer) {
   window.addEventListener('scroll', () => {
