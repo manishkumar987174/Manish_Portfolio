@@ -186,3 +186,15 @@
 .bg-\[radial-gradient\(ellipse_at_top_right\,rgba\(197\,168\,128\,0\.06\)\,transparent_50\%\)\] {
   background-image: radial-gradient(ellipse at top right, rgba(209, 213, 219, 0.05), transparent 50%) !important;
 }
+
+/* Contact box input fields styling - 4px increased padding & size */
+#contact-form input,
+#contact-form textarea,
+.contact-input {
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  font-size: 15px !important;
+}
+

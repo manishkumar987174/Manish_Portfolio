@@ -179,7 +179,6 @@ if (contactForm) {
     if (statusError) statusError.classList.add('hidden');
 
     try {
-      
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -195,12 +194,12 @@ if (contactForm) {
         throw new Error(data.error || 'Server submission failed');
       }
     } catch (error) {
-      console.warn('Backend API submission failed, falling back to mailto client link.', error);
+      console.warn('Backend API submission failed, falling back to mailto link.', error);
 
       try {
         const mailtoSubject = encodeURIComponent(`Portfolio Message from ${name}`);
         const mailtoBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-        window.location.href = `mailto:manishdeveloper28@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
+        window.location.href = `mailto:manishkumar987174@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
         showStatus(true);
         contactForm.reset();
       } catch (err) {
