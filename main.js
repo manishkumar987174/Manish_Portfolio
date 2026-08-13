@@ -100,15 +100,15 @@ const menuCloseIcon = document.getElementById('menu-close-icon');
 
 if (mobileMenuBtn && mobileMenu) {
   mobileMenuBtn.addEventListener('click', () => {
-    const isOpen = mobileMenu.classList.toggle('hidden');
-    if (isOpen) {
+    const isHidden = mobileMenu.classList.toggle('hidden');
+    if (isHidden) {
       menuOpenIcon.classList.remove('hidden');
       menuCloseIcon.classList.add('hidden');
     } else {
       menuOpenIcon.classList.add('hidden');
       menuCloseIcon.classList.remove('hidden');
       
-      animate(mobileMenu, { opacity: [0, 1], y: [-20, 0] }, { duration: 0.3 });
+      animate(mobileMenu, { opacity: [0, 1], y: [-10, 0] }, { duration: 0.3 });
     }
   });
 
